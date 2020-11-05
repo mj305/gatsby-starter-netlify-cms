@@ -3,7 +3,8 @@ templateKey: index-page
 title: AAA Garage Door
 image: /img/home-jumbotron.jpg
 heading: Servicing Garage Door
-subheading: Support sustainable farming while enjoying a cup
+subheading: Same Day Garage Door Services
+subheading2: Serving Miami Dade And Broward Area
 mainpitch:
   title: Why Kaldi
   description: >
