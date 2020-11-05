@@ -2,10 +2,9 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import logo from '../img/logo.png'
-import facebook from '../img/social/facebook.svg'
-import instagram from '../img/social/instagram.svg'
-import twitter from '../img/social/twitter.svg'
-import vimeo from '../img/social/vimeo.svg'
+import facebook from '../img/social/facebook.png'
+import instagram from '../img/social/instagram.png'
+import twitter from '../img/social/twitter.png'
 
 const Footer = class extends React.Component {
   render() {
@@ -78,7 +77,7 @@ const Footer = class extends React.Component {
                   <img
                     src={facebook}
                     alt="Facebook"
-                    style={{ width: '1em', height: '1em' }}
+                    style={{ width: '1.5em', height: '1.5em', }}
                   />
                 </a>
                 <a title="twitter" href="https://twitter.com/InfoGaragedoor" target="blank">
@@ -86,14 +85,14 @@ const Footer = class extends React.Component {
                     className="fas fa-lg"
                     src={twitter}
                     alt="Twitter"
-                    style={{ width: '1em', height: '1em' }}
+                    sstyle={{ width: '1em', height: '1em', }}
                   />
                 </a>
                 <a title="instagram" href="https://www.instagram.com/miamioverhead/?hl=en" target="blank">
                   <img
                     src={instagram}
                     alt="Instagram"
-                    style={{ width: '1em', height: '1em' }}
+                    style={{ width: '1.5em', height: '1.5em', }}
                   />
                 </a>
                 
