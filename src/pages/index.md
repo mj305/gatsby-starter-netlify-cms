@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: AAA Garage Door Inc.
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+heading: Miami Dade Broward Palm Beach
+subheading: Same Day Service in Miami Dade, Broward, and Palm Beach Area
 mainpitch:
   title: Why Kaldi
   description: >
