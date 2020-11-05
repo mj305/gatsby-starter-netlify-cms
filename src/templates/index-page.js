@@ -19,11 +19,12 @@ export const IndexPageTemplate = ({
     <div
       className="full-width-image margin-top-0"
       style={{
-        backgroundImage: `url(${
+        backgroundImage: `linear-gradient(70deg,#283d4b 0%,rgba(128,103,79,0.5) 100%),url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
         backgroundPosition: `top left`,
         backgroundAttachment: `fixed`,
+        height: '100vh',
       }}
     >
       <div
@@ -39,7 +40,7 @@ export const IndexPageTemplate = ({
         <h1
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
-    
+            textAlign: 'center',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -50,8 +51,8 @@ export const IndexPageTemplate = ({
         <h3
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
-            
-            color: 'white',
+            textAlign: 'center',
+            color: '#dbdbdb',
             lineHeight: '1',
             padding: '0.25em',
           }}
