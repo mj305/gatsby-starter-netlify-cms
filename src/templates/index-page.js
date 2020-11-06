@@ -79,7 +79,7 @@ export const IndexPageTemplate = ({
               className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
               style={{
                 textAlign: 'center',
-                color: '#dbdbdb',
+                color: '#ffffff',
                 lineHeight: '1',
                 padding: '0.25em',
                 marginBottom: '.5rem',
@@ -92,7 +92,7 @@ export const IndexPageTemplate = ({
               href="tel:305-702-0113"
               style={{
                 marginLeft: '17%',
-                color: '#dbdbdb',
+                color: '#ffffff',
                 lineHeight: '1',
                 padding: '0.25em',
               }}
@@ -120,10 +120,10 @@ export const IndexPageTemplate = ({
             }} */
        class="tabs is-centered">
         <ul>
-          <li class="is-active"><a>Pictures</a></li>
-          <li><a>Music</a></li>
-          <li><a>Videos</a></li>
-          <li><a>Documents</a></li>
+          <li class="is-active"><a>How Much Would It Cost?</a></li>
+          <li><a>I Need Door Repair Services</a></li>
+          <li><a>I Need A New Garage Door</a></li>
+          <li><a>Schedule Annual Tune Up </a></li>
         </ul>
       </div>
 
