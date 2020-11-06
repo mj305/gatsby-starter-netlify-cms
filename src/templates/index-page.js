@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import "../styles/index.css"
 
 
 export const IndexPageTemplate = ({
@@ -19,6 +19,7 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
+
     <div
       className="full-width-image margin-top-0"
       style={{
@@ -114,18 +115,25 @@ export const IndexPageTemplate = ({
         > 
       </div>
 
-      <div
-      /*       style={{
-              textAlign: 'center',
-            }} */
-       class="tabs is-centered">
-        <ul>
-          <li class="is-active"><a>How Much Would It Cost?</a></li>
-          <li><a>I Need Door Repair Services</a></li>
-          <li><a>I Need A New Garage Door</a></li>
-          <li><a>Schedule Annual Tune Up </a></li>
-        </ul>
+
+      <div id="tabs-with-content">
+        <div class="tabs is-centered">
+          <ul>
+            <li class="is-active"><a>How Much Would It Cost?</a></li>
+            <li><a>I Need Door Repair Services</a></li>
+            <li><a>I Need A New Garage Door</a></li>
+            <li><a>Schedule Annual Tune Up </a></li>
+          </ul>        
+        </div>
+
+        <div>
+          <section class="tab-content">Pictures content</section>
+          <section class="tab-content">Music content</section>
+          <section class="tab-content">Videos content</section>
+          <section class="tab-content">Documents content</section>
+        </div>
       </div>
+
 
           
     <section className="section section--gradient">
@@ -143,11 +151,18 @@ export const IndexPageTemplate = ({
                   </div>
                 </div>
 
+            {/* attempt of squares under view port */}
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
                 <div
                   style={{
                     
                     backgroundColor: '#46870C',
-                    width: '40%',
+                    width: '30%',
                     margin: '4rem auto 4rem auto',
                     padding: '1rem',
                     borderRadius: '3rem',
@@ -170,7 +185,7 @@ export const IndexPageTemplate = ({
                       className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
                       href="tel:305-702-0113"
                       style={{
-                        marginLeft: '17%',
+                        marginLeft: '20%',
                         color: '#ffffff',
                         lineHeight: '1',
                         padding: '0.25em',

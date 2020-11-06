@@ -22,7 +22,11 @@ const Footer = class extends React.Component {
             <div style={{ maxWidth: '100vw' }} className="columns">
               <div className="column is-4">
                 <section className="menu">
-                  <ul className="menu-list">
+                  <ul className="menu-list"
+                  style={{
+                    fontSize: '1.2rem',
+                  }}
+                  >
                     <li>
                       <Link to="/" className="navbar-item">
                         Home
@@ -54,7 +58,11 @@ const Footer = class extends React.Component {
               </div>
               <div className="column is-4">
                 <section>
-                  <ul className="menu-list">
+                  <ul className="menu-list"
+                  style={{
+                    fontSize: '1.2rem',
+                  }}
+                  >
                     <li>
                       <Link className="navbar-item" /* to="/blog" */ to="#">
                         Blog
