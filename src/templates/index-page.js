@@ -142,6 +142,45 @@ export const IndexPageTemplate = ({
                     <h3 className="subtitle">{mainpitch.description}</h3>
                   </div>
                 </div>
+
+                <div
+                  style={{
+                    
+                    backgroundColor: '#46870C',
+                    width: '40%',
+                    margin: '4rem auto 4rem auto',
+                    padding: '1rem',
+                    borderRadius: '3rem',
+                    cursor: 'pointer',
+                  }}
+                  >
+                    <h5
+                      className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+                      style={{
+                        textAlign: 'center',
+                        color: '#ffffff',
+                        lineHeight: '1',
+                        padding: '0.25em',
+                        marginBottom: '.5rem',
+                      }}
+                    >
+                      {subheading2}
+                    </h5>
+                    <a
+                      className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+                      href="tel:305-702-0113"
+                      style={{
+                        marginLeft: '17%',
+                        color: '#ffffff',
+                        lineHeight: '1',
+                        padding: '0.25em',
+                      }}
+                    >
+                      {subheading3}
+                    </a>
+                 </div>
+
+
                 <div className="columns">
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
@@ -160,7 +199,7 @@ export const IndexPageTemplate = ({
                 </div>
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
+                    Blog
                   </h3>
                   <BlogRoll />
                   <div className="column is-12 has-text-centered">
