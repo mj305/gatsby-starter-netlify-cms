@@ -142,20 +142,103 @@ export const IndexPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <div className="content">
+                <div
+                style={{
+                  textAlign: 'center',
+                 }}
+                className="content">
                   <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
+                    <h1 
+                    style={{
+                      margin: '3rem auto',
+                     }}
+                    className="title">{mainpitch.title}</h1>
                   </div>
-                  <div className="tile">
+                  <div 
+                  style={{
+                    marginTop: '2rem',
+                   }}
+                  className="tile">
                     <h3 className="subtitle">{mainpitch.description}</h3>
                   </div>
                 </div>
 
             {/* attempt of squares under view port */}
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    width: '100%',
+                    textAlign: 'center',
+                    margin: '12rem auto 12rem auto',
+                }} 
+                >
+                    <div
+                      style={{
+                      width: '30%',
+                      
+                  }} 
+                    >
+                      <span>homeIcon</span>
+                       <div
+                       style={{
+                        fontWeight: '600',
+                    }} 
+                       >RESIDENTIAL</div>
+                       <div>
+                          Huge variety of hurricane garage 
+                          doors surpass all requirements to protect your Home and loved ones.
+                       </div>
+                       <div
+                       style={{
+                        fontWeight: '600',
+                    }} 
+                       >LEARN MORE</div>
+                    </div>
+
+                    <div
+                    style={{
+                      width: '30%',
+                     }}
+                    >
+                      <span>commercialIcon</span>
+                       <div
+                       style={{
+                        fontWeight: '600',
+                    }} 
+                       >COMMERCIAL</div>
+                       <div>
+                          AAA Garage Door Inc. Services and repairs all major brands of 
+                          overhead commercial garage doors and motors.
+                       </div>
+                       <div
+                       style={{
+                        fontWeight: '600',
+                    }} 
+                       >LEARN MORE</div>
+                    </div>
+
+                    <div
+                    style={{
+                      width: '30%',
+                  }}
+                    >
+                      <span>entrySystemsIcon</span>
+                       <div
+                       style={{
+                        fontWeight: '600',
+                    }} 
+                       >ENTRY SYSTEMS</div>
+                       <div>
+                         We specialize in access control solutions Telephone Entry Systems; 
+                         Door/Gate Access Controllers.
+                       </div>
+                       <div
+                       style={{
+                        fontWeight: '600',
+                    }} 
+                       >LEARN MORE</div>
+                    </div>
                 </div>
 
                 <div
@@ -163,7 +246,7 @@ export const IndexPageTemplate = ({
                     
                     backgroundColor: '#46870C',
                     width: '30%',
-                    margin: '4rem auto 4rem auto',
+                    margin: '4rem auto 5rem auto',
                     padding: '1rem',
                     borderRadius: '3rem',
                     cursor: 'pointer',
