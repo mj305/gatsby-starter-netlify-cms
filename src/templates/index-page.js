@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import secondViewPortHome from '../../static/img/secondViewPortHome.jpg'
 import "../styles/index.css"
 
 
@@ -70,7 +71,7 @@ export const IndexPageTemplate = ({
           style={{
             backgroundColor: '#46870C',
             width: '40%',
-            margin: '4rem auto auto auto',
+            margin: '2rem auto auto auto',
             padding: '1rem',
             borderRadius: '3rem',
             cursor: 'pointer',
@@ -135,6 +136,184 @@ export const IndexPageTemplate = ({
       </div>
 
 
+      <section>
+        <div
+          style={{
+            backgroundImage:  `/* linear-gradient(70deg,#283d4b 0%,rgba(128,103,79,0.5) 100%), */url(${secondViewPortHome})`,
+            backgroundPosition: `top left`,
+            backgroundAttachment: `fixed`,
+            height: '100vh',
+            width: '100vw',
+            backgroundPosition: 'center',
+            height: '100vh',
+            marginTop: '10rem',
+            marginBottom: '5rem',
+            padding: '1rem',
+            }}
+            >
+
+          
+          <div
+          style={{
+            marginTop: '2rem',
+            color: 'white',
+            textAlign: 'center',
+            }}
+          className="content">
+            <div className="tile">
+              <h1 
+              style={{
+                color: 'white',
+                margin: '3rem auto',
+                }}
+              className="title">{mainpitch.title}</h1>
+            </div>
+
+            <div className="tile">
+              <h3
+                style={{
+                color: 'white',
+                textAlign: 'center',
+                margin: 'auto',
+              }}
+            
+              className="subtitle">{mainpitch.description}</h3>
+            </div>
+          </div>
+
+      {/* attempt of squares under view port */}
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'space-around',
+              width: '100%',
+              /* textAlign: 'center', */
+              margin: '6rem auto 6rem auto',
+              lineHeight: '2rem',
+          }} 
+          >
+              <div
+                style={{
+                width: '25%',
+                backgroundColor: '#035aa6',
+                opacity: '80%',
+                color: 'white',
+                padding: '2rem',
+            }} 
+              >
+                <span>homeIcon</span>
+                  <div
+                  style={{
+                  fontWeight: '600',
+                  color: '#ffffff',
+              }} 
+                  >RESIDENTIAL</div>
+                  <div>
+                    Huge variety of hurricane garage 
+                    doors surpass all requirements to protect your Home and loved ones.
+                  </div>
+                  <div
+                  style={{
+                  fontWeight: '600',
+                  marginTop: '1rem',
+              }} 
+                  >LEARN MORE</div>
+              </div>
+
+              <div
+              style={{
+                width: '25%',
+                backgroundColor: '#4a3f35',
+                opacity: '80%',
+                color: 'white',
+                padding: '2rem',
+                }}
+              >
+                <span>commercialIcon</span>
+                  <div
+                  style={{
+                  fontWeight: '600',
+              }} 
+                  >COMMERCIAL</div>
+                  <div>
+                    AAA Garage Door Inc. Services and repairs all major brands of 
+                    overhead commercial garage doors and motors.
+                  </div>
+                  <div
+                  style={{
+                  fontWeight: '600',
+                  marginTop: '1rem',
+              }} 
+                  >LEARN MORE</div>
+              </div>
+
+              <div
+              style={{
+                width: '25%',
+                backgroundColor: '#db6400',
+                opacity: '80%',
+                color: 'white',
+                padding: '2rem',
+            }}
+              >
+                <span>entrySystemsIcon</span>
+                  <div
+                  style={{
+                  fontWeight: '600',
+              }} 
+                  >ENTRY SYSTEMS</div>
+                  <div>
+                    We specialize in access control solutions Telephone Entry Systems; 
+                    Door/Gate Access Controllers.
+                  </div>
+                  <div
+                  style={{
+                  fontWeight: '600',
+                  marginTop: '1rem',
+              }} 
+                  >LEARN MORE</div>
+              </div>
+          </div>
+
+          <div
+            style={{
+              backgroundColor: '#46870C',
+              width: '20%',
+              margin: '3rem auto 5rem auto',
+              padding: '1rem',
+              borderRadius: '3rem',
+              cursor: 'pointer',
+            }}
+            >
+              <h5
+                className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+                style={{
+                  textAlign: 'center',
+                  color: '#ffffff',
+                  lineHeight: '1',
+                  padding: '0.25em',
+                  marginBottom: '.5rem',
+                }}
+              >
+                {subheading2}
+              </h5>
+              <a
+                className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+                href="tel:305-702-0113"
+                style={{
+                  marginLeft: '23%',
+                  color: '#ffffff',
+                  lineHeight: '1',
+                  padding: '0.25em',
+                }}
+              >
+                {subheading3}
+              </a>
+            </div>
+            </div>
+      </section>
+
+
           
     <section className="section section--gradient">
       <div className="container">
@@ -142,143 +321,6 @@ export const IndexPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <div
-                style={{
-                  textAlign: 'center',
-                 }}
-                className="content">
-                  <div className="tile">
-                    <h1 
-                    style={{
-                      margin: '3rem auto',
-                     }}
-                    className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div 
-                  style={{
-                    marginTop: '2rem',
-                   }}
-                  className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div>
-
-            {/* attempt of squares under view port */}
-                <div
-                  style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    width: '100%',
-                    textAlign: 'center',
-                    margin: '12rem auto 12rem auto',
-                }} 
-                >
-                    <div
-                      style={{
-                      width: '30%',
-                      
-                  }} 
-                    >
-                      <span>homeIcon</span>
-                       <div
-                       style={{
-                        fontWeight: '600',
-                    }} 
-                       >RESIDENTIAL</div>
-                       <div>
-                          Huge variety of hurricane garage 
-                          doors surpass all requirements to protect your Home and loved ones.
-                       </div>
-                       <div
-                       style={{
-                        fontWeight: '600',
-                    }} 
-                       >LEARN MORE</div>
-                    </div>
-
-                    <div
-                    style={{
-                      width: '30%',
-                     }}
-                    >
-                      <span>commercialIcon</span>
-                       <div
-                       style={{
-                        fontWeight: '600',
-                    }} 
-                       >COMMERCIAL</div>
-                       <div>
-                          AAA Garage Door Inc. Services and repairs all major brands of 
-                          overhead commercial garage doors and motors.
-                       </div>
-                       <div
-                       style={{
-                        fontWeight: '600',
-                    }} 
-                       >LEARN MORE</div>
-                    </div>
-
-                    <div
-                    style={{
-                      width: '30%',
-                  }}
-                    >
-                      <span>entrySystemsIcon</span>
-                       <div
-                       style={{
-                        fontWeight: '600',
-                    }} 
-                       >ENTRY SYSTEMS</div>
-                       <div>
-                         We specialize in access control solutions Telephone Entry Systems; 
-                         Door/Gate Access Controllers.
-                       </div>
-                       <div
-                       style={{
-                        fontWeight: '600',
-                    }} 
-                       >LEARN MORE</div>
-                    </div>
-                </div>
-
-                <div
-                  style={{
-                    
-                    backgroundColor: '#46870C',
-                    width: '30%',
-                    margin: '4rem auto 5rem auto',
-                    padding: '1rem',
-                    borderRadius: '3rem',
-                    cursor: 'pointer',
-                  }}
-                  >
-                    <h5
-                      className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-                      style={{
-                        textAlign: 'center',
-                        color: '#ffffff',
-                        lineHeight: '1',
-                        padding: '0.25em',
-                        marginBottom: '.5rem',
-                      }}
-                    >
-                      {subheading2}
-                    </h5>
-                    <a
-                      className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-                      href="tel:305-702-0113"
-                      style={{
-                        marginLeft: '20%',
-                        color: '#ffffff',
-                        lineHeight: '1',
-                        padding: '0.25em',
-                      }}
-                    >
-                      {subheading3}
-                    </a>
-                 </div>
-
-
                 <div className="columns">
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
