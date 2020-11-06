@@ -1,10 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+
 import secondViewPortHome from '../../static/img/secondViewPortHome.jpg'
+import commercial from '../../static/img/commercial.png'
+import house from '../../static/img/house.png'
+import key from '../../static/img/key.png'
+
 import "../styles/index.css"
 
 
@@ -201,7 +207,7 @@ export const IndexPageTemplate = ({
                 padding: '2rem',
             }} 
               >
-                <span>homeIcon</span>
+                <img src={house} />
                   <div
                   style={{
                   fontWeight: '600',
@@ -229,7 +235,7 @@ export const IndexPageTemplate = ({
                 padding: '2rem',
                 }}
               >
-                <span>commercialIcon</span>
+                <img src={commercial} />
                   <div
                   style={{
                   fontWeight: '600',
@@ -256,7 +262,7 @@ export const IndexPageTemplate = ({
                 padding: '2rem',
             }}
               >
-                <span>entrySystemsIcon</span>
+                <img src={key} />
                   <div
                   style={{
                   fontWeight: '600',
