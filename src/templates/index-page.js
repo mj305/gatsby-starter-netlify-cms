@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 
+
 export const IndexPageTemplate = ({
   image,
   title,
@@ -99,9 +100,21 @@ export const IndexPageTemplate = ({
               {subheading3}
             </a>
           </div>
-
       </div>
     </div>
+
+      <div
+      style={{
+        paddingTop: '-5rem',
+        background: `linear-gradient(180deg, rgba(101,102,102,1) 0%, rgba(232,232,232,1) 50%, rgba(255,255,255,1) 70%)`,  
+        opacity: '60%',      
+        height: '30vh',
+        width: '100vw',
+      }}
+        > 
+      </div>
+
+          
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
