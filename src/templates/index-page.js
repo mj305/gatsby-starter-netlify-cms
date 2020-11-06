@@ -114,6 +114,19 @@ export const IndexPageTemplate = ({
         > 
       </div>
 
+      <div
+      /*       style={{
+              textAlign: 'center',
+            }} */
+       class="tabs is-centered">
+        <ul>
+          <li class="is-active"><a>Pictures</a></li>
+          <li><a>Music</a></li>
+          <li><a>Videos</a></li>
+          <li><a>Documents</a></li>
+        </ul>
+      </div>
+
           
     <section className="section section--gradient">
       <div className="container">
