@@ -64,29 +64,41 @@ export const IndexPageTemplate = ({
           {subheading}
         </h3>
 
-        <h5
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+          <div
           style={{
-            textAlign: 'center',
-            color: '#dbdbdb',
-            lineHeight: '1',
-            padding: '0.25em',
+            backgroundColor: '#46870C',
+            width: '40%',
+            margin: '4rem auto auto auto',
+            padding: '1rem',
+            borderRadius: '3rem',
+            cursor: 'pointer',
           }}
-        >
-          {subheading2}
-        </h5>
-        <h5
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            textAlign: 'center',
-            color: '#dbdbdb',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {subheading3}
-        </h5>
-
+          >
+            <h5
+              className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+              style={{
+                textAlign: 'center',
+                color: '#dbdbdb',
+                lineHeight: '1',
+                padding: '0.25em',
+                marginBottom: '.5rem',
+              }}
+            >
+              {subheading2}
+            </h5>
+            <a
+              className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+              href="tel:305-702-0113"
+              style={{
+                marginLeft: '17%',
+                color: '#dbdbdb',
+                lineHeight: '1',
+                padding: '0.25em',
+              }}
+            >
+              {subheading3}
+            </a>
+          </div>
 
       </div>
     </div>
