@@ -6,10 +6,17 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 
-import secondViewPortHome from '../../static/img/secondViewPortHome.jpg'
 import commercial from '../../static/img/commercial.png'
 import house from '../../static/img/house.png'
 import key from '../../static/img/key.png'
+import secondViewPortHome from '../../static/img/secondViewPortHome.jpg'
+import users from '../../static/img/users.png'
+import like from '../../static/img/like.png'
+import time from '../../static/img/time.png'
+import award from '../../static/img/award.png'
+import shake from '../../static/img/shake.png'
+import calendar from '../../static/img/calendar.png'
+
 
 import "../styles/index.css"
 
@@ -168,11 +175,12 @@ export const IndexPageTemplate = ({
           className="content">
             <div className="tile">
               <h1 
-              style={{
-                color: 'white',
-                margin: '3rem auto',
-                }}
-              className="title">{mainpitch.title}</h1>
+                style={{
+                  color: 'white',
+                  margin: '3rem auto',
+                  }}
+                className="title">{mainpitch.title}
+              </h1>
             </div>
 
             <div className="tile">
@@ -181,9 +189,10 @@ export const IndexPageTemplate = ({
                 color: 'white',
                 textAlign: 'center',
                 margin: 'auto',
+                width: '40%',
               }}
-            
-              className="subtitle">{mainpitch.description}</h3>
+              className="subtitle">{mainpitch.description}
+              </h3>
             </div>
           </div>
 
@@ -319,6 +328,265 @@ export const IndexPageTemplate = ({
             </div>
       </section>
 
+      <section>
+        {/* CARDS THIRD VIEW PORT */}
+        <div
+          style={{
+            marginTop: '2rem',
+            textAlign: 'center',
+            }}
+          className="content">
+            <div className="tile">
+              <h1 
+                style={{
+                  color: 'grey',
+                  margin: '3rem auto',
+                  }}
+                className="title">
+                  AAA Garage Door
+              </h1>
+            </div>
+
+            <div className="tile">
+              <h3
+                style={{
+                color: 'grey',
+                textAlign: 'center',
+                margin: 'auto',
+                width: '40%',
+              }}
+              className="subtitle">
+                Great Reasons To Hire Us?
+              </h3>
+            </div>
+          </div>
+        <div
+            style={{
+              display: 'flex',
+              justifyContent: 'space-around',
+              width: '100%',
+              /* textAlign: 'center', */
+              margin: '8rem auto 6rem auto',
+              lineHeight: '2rem',
+          }} 
+          >
+              <div
+                style={{
+                width: '25%',
+                opacity: '80%',
+                color: 'white',
+                padding: '2rem',
+
+                /* boxShadow: '0 8px 6px -6px black', */
+
+                boxShadow:
+                `0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                0 12.5px 10px rgba(0, 0, 0, 0.06),
+                0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                0 100px 80px rgba(0, 0, 0, 0.12)`
+                          }} 
+              >
+                <img src={time} />
+                  <div
+                  style={{
+                  fontWeight: '600',
+                  color: '#035aa6',
+              }} 
+                  >AVAILABLE 'ROUND THE CLOCK</div>
+                  <div
+                  style={{
+                    color: 'grey',
+                }} 
+                  >
+                    Accessibility at your 
+                    fingertips with world class 
+                    emergency service when you need it most.
+                  </div>
+              </div>
+
+              <div
+              style={{
+                width: '25%',
+                opacity: '80%',
+                color: 'grey',
+                padding: '2rem',
+
+                /* boxShadow: '0 8px 6px -6px black', */
+                boxShadow:
+                `0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                0 12.5px 10px rgba(0, 0, 0, 0.06),
+                0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                0 100px 80px rgba(0, 0, 0, 0.12)`
+
+                }}
+              >
+                <img src={like} />
+                  <div
+                  style={{
+                  fontWeight: '600',
+                  color: '#035aa6',
+              }} 
+                  >SATISFACTION GUARANTEED</div>
+                  <div>
+                  Our intergrity, sturdy against 
+                  any compromise of quality, or 
+                  saftey regarding work preformed.
+                  </div>
+              </div>
+
+              <div
+              style={{
+                width: '25%',
+                opacity: '80%',
+                color: 'white',
+                padding: '2rem',
+                color: 'grey',
+                /* boxShadow: '0 8px 6px -6px black', */
+
+                boxShadow:
+                `0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                0 12.5px 10px rgba(0, 0, 0, 0.06),
+                0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                0 100px 80px rgba(0, 0, 0, 0.12)`
+
+            }}
+              >
+                <img src={users} />
+                  <div
+                  style={{
+                  fontWeight: '600',
+                  color: '#035aa6',
+              }} 
+                  >FREE CONSULTATIONS</div>
+                  <div>
+                  Free on-site estimates for the 
+                  opportunity to earn your business 
+                  on all new garage doors.
+                  </div>
+              </div>   
+          </div>
+
+          {/* MORE CARDS */}
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'space-around',
+              width: '100%',
+              /* textAlign: 'center', */
+              margin: '8rem auto 6rem auto',
+              lineHeight: '2rem',
+          }} 
+          >
+              <div
+                style={{
+                width: '25%',
+                opacity: '80%',
+                color: 'white',
+                padding: '2rem',
+
+                /* boxShadow: '0 8px 6px -6px black', */
+
+                boxShadow:
+                `0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                0 12.5px 10px rgba(0, 0, 0, 0.06),
+                0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                0 100px 80px rgba(0, 0, 0, 0.12)`
+                          }} 
+              >
+                <img src={award} />
+                  <div
+                  style={{
+                  fontWeight: '600',
+                  color: '#035aa6',
+              }} 
+                  >QUALIFIED EXPERTS</div>
+                  <div
+                  style={{
+                    color: 'grey',
+                }} 
+                  >
+                    Lorem Ipsum is simply dummy text of the 
+                    printing and typesetting industry.
+                  </div>
+              </div>
+
+              <div
+              style={{
+                width: '25%',
+                opacity: '80%',
+                color: 'grey',
+                padding: '2rem',
+
+                /* boxShadow: '0 8px 6px -6px black', */
+                boxShadow:
+                `0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                0 12.5px 10px rgba(0, 0, 0, 0.06),
+                0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                0 100px 80px rgba(0, 0, 0, 0.12)`
+
+                }}
+              >
+                <img src={shake} />
+                  <div
+                  style={{
+                  fontWeight: '600',
+                  color: '#035aa6',
+              }} 
+                  >
+                    WORKMANSHIP & PARTS WARRANTIED
+                  </div>
+                  <div>
+                  Lorem Ipsum is simply dummy text 
+                  of the printing and typesetting industry.
+                  </div>
+              </div>
+
+              <div
+              style={{
+                width: '25%',
+                opacity: '80%',
+                color: 'white',
+                padding: '2rem',
+                color: 'grey',
+                /* boxShadow: '0 8px 6px -6px black', */
+
+                boxShadow:
+                `0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                0 12.5px 10px rgba(0, 0, 0, 0.06),
+                0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                0 100px 80px rgba(0, 0, 0, 0.12)`
+
+            }}
+              >
+                <img src={calendar} />
+                  <div
+                  style={{
+                  fontWeight: '600',
+                  color: '#035aa6',
+              }} 
+                  >Service On Your Schedule
+                  </div>
+                  <div>
+                  Lorem Ipsum is simply dummy text 
+                  of the printing and typesetting industry.
+                  </div>
+              </div>   
+          </div>
+
+      </section>
+
 
           
     <section className="section section--gradient">
@@ -338,7 +606,7 @@ export const IndexPageTemplate = ({
                 <Features gridItems={intro.blurbs} />
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
+                    <Link className="btn" to="#" /* to="/products" */>
                       See all products
                     </Link>
                   </div>
