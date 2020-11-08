@@ -617,13 +617,19 @@ export const IndexPageTemplate = ({
                     </Link>
                   </div>
                 </div>
+
                 <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
+                  <h3 
+                  style={{
+                    textAlign: 'center',  
+                    margin: '5rem auto 3rem auto',
+                   }}
+                  className="has-text-weight-semibold is-size-2">
                     Blog
                   </h3>
                   <BlogRoll />
                   <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
+                    <Link className="btn" to="#" /* to="/blog" */>
                       Read more
                     </Link>
                   </div>
