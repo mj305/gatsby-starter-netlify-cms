@@ -2,7 +2,7 @@
 templateKey: index-page
 title: AAA Garage Door Inc.
 image: /img/home-jumbotron.jpg
-heading: Miami Dade Broward Palm Beach
+heading: Why Choose AAA Garage Door Inc?
 subheading: Same Day Service in Miami Dade, Broward, and Palm Beach Area
 subheading2: Call For Consultation
 subheading3: (305) 702-0113
@@ -13,10 +13,15 @@ mainpitch:
     The most dependable and affordable local garage door contractor
 
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  For expertise that works for your absolute convenience, just give AAA 
+  Garage Door a call. Our team provides comprehensive garage door solutions 
+  all over Miami-Dade County, FL. From new residential installations 
+  to replacements and repairs, we apply the most innovative technologies 
+  and unparalleled skill to ensure your garage doors are properly handled. 
+  When your garage door springs require replacing or you need a low-cost 
+  answer for jammed garage openers, AAA Garage Door will serve with excellence 
+  and deliver outstanding results you can certainly rely on.We carry A huge 
+  variety of approved Hurricane doors
 intro:
   blurbs:
     - image: /img/coffee.png

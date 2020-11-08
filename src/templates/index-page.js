@@ -16,6 +16,7 @@ import time from '../../static/img/time.png'
 import award from '../../static/img/award.png'
 import shake from '../../static/img/shake.png'
 import calendar from '../../static/img/calendar.png'
+import limitedEdition from '../../static/img/limitedEdition.png'
 
 
 import "../styles/index.css"
@@ -597,7 +598,12 @@ export const IndexPageTemplate = ({
               <div className="content">
                 <div className="columns">
                   <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
+                    <h3 
+                    style={{
+                      textAlign: 'center',  
+                      margin: '5rem auto 3rem auto',
+                  }}
+                    className="has-text-weight-semibold is-size-2">
                       {heading}
                     </h3>
                     <p>{description}</p>
