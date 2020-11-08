@@ -604,7 +604,7 @@ export const IndexPageTemplate = ({
                       textAlign: 'center',  
                       margin: '5rem auto 3rem auto',
                   }}
-                    className="has-text-weight-semibold is-size-2">
+                    className="has-text-weight-semibold is-size-2 garage-doors">
                       {heading}
                     </h3>
                     <p
@@ -617,11 +617,11 @@ export const IndexPageTemplate = ({
                 </div>
                 <Features gridItems={intro.blurbs} />
                 <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="#" /* to="/products" */>
-                      See all products
+{/*                   <div className="column is-12 has-text-centered">
+                    <Link className="btn" to="#">
+                      See All Garage Doors
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="column is-12">

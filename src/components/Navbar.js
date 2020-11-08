@@ -33,49 +33,82 @@ const Navbar = class extends React.Component {
 
   render() {
     return (
-      <nav
-        className="navbar is-transparent"
-        role="navigation"
-        aria-label="main-navigation"
-      >
-        <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="AAA Garage Door Logo Icon" style={{ width: '88px' }} />
+      <nav className="navbar is-transparent">
+      <div className="navbar-brand">
+        <Link className="navbar-item" href="/">
+          <img src={logo} alt="AAA Garage Door Inc Same Day Service Miami Dade Broward Palm Beach" width="112" height="28" />
+        </Link>
+        <div className="navbar-burger burger" data-target="navbarExampleTransparentExample">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    
+      <div id="navbarExampleTransparentExample" className="navbar-menu">
+        <div className="navbar-start">
+
+
+          <div className="navbar-item has-dropdown is-hoverable">
+            <Link className="navbar-link" href="#">
+              Residential Services
             </Link>
-            {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-            >
-              <span />
-              <span />
-              <span />
-            </div>
-          </div>
-          <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-          >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="#" /* to="/about" */>
-                About
+            <div className="navbar-dropdown is-boxed">
+              <Link 
+              style={{
+                fontSize: '1rem',
+                fontWeight: '600',
+            }}
+              className="navbar-item" href="#">
+                Residential Doors
               </Link>
-              <Link className="navbar-item" to="#" /* to="/products" */>
-                Products
+
+              <hr className="navbar-divider"/>
+
+              <div 
+                style={{
+                  fontSize: '1rem',
+                  fontWeight: '600',
+              }}
+              className="navbar-item" href="#">
+                Garage Door Openers
+              </div>
+
+              
+              <Link className="navbar-item">
+                Jack Shaft Openers
               </Link>
-              <Link className="navbar-item" to="#" /* to="/blog" */>
-                Blog
+              <Link className="navbar-item">
+                Chain Openers
               </Link>
-              <Link className="navbar-item" to="#" /* to="/contact" */>
-                Contact
+              <Link className="navbar-item">
+                Belt Drive Openers
               </Link>
             </div>
 
+          <Link className="navbar-item" href="#">
+            Commercial 
+          </Link>
+
+          <Link className="navbar-item" href="#">
+            Gate Repair
+          </Link>
+
+          <Link className="navbar-item" href="#">
+            Blog
+          </Link>
+
+          <Link className="navbar-item" href="#">
+            About
+          </Link>
+
+          <Link className="navbar-item" href="#">
+            Contact
+          </Link>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
     )
   }
 }
