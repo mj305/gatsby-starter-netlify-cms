@@ -23,6 +23,9 @@ const FeatureGrid = ({ gridItems }) => (
           </div>
           <p
           style={{
+            color: 'grey',
+            fontSize: '1.2rem',
+            fontWeight: '600',
             textAlign: 'center',  
             margin: '2rem auto auto auto',
            }}

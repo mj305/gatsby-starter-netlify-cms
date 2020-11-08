@@ -600,13 +600,19 @@ export const IndexPageTemplate = ({
                   <div className="column is-12">
                     <h3 
                     style={{
+                      color: 'grey',
                       textAlign: 'center',  
                       margin: '5rem auto 3rem auto',
                   }}
                     className="has-text-weight-semibold is-size-2">
                       {heading}
                     </h3>
-                    <p>{description}</p>
+                    <p
+                    style={{
+                      color: 'grey',
+                      fontSize: '1.2rem',
+                  }}
+                    >{description}</p>
                   </div>
                 </div>
                 <Features gridItems={intro.blurbs} />
@@ -621,9 +627,10 @@ export const IndexPageTemplate = ({
                 <div className="column is-12">
                   <h3 
                   style={{
+                    color: 'grey',
                     textAlign: 'center',  
                     margin: '5rem auto 3rem auto',
-                   }}
+                }}
                   className="has-text-weight-semibold is-size-2">
                     Blog
                   </h3>
