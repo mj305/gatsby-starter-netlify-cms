@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-const FeatureGrid = ({ gridItems }) => (
+const OpenersGrid = ({ gridItems }) => (
   <div className="columns is-multiline features">
     {gridItems.map((item) => (
       <div key={item.text} className="column is-6">
@@ -29,14 +29,17 @@ const FeatureGrid = ({ gridItems }) => (
             textAlign: 'center',  
             margin: '2rem auto auto auto',
            }}
-          >{item.text}</p>
+          >{item.title}</p>
+          <h1 className="subtitle">
+            {item.text}
+          </h1>
         </section>
       </div>
     ))}
   </div>
 )
 
-FeatureGrid.propTypes = {
+OpenersGrid.propTypes = {
   gridItems: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -45,4 +48,4 @@ FeatureGrid.propTypes = {
   ),
 }
 
-export default FeatureGrid
+export default OpenersGrid
