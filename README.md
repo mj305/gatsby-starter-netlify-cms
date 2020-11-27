@@ -1,4 +1,5 @@
-# Gatsby + Netlify CMS Starter
+# AAA Garage Door Service
+## Gatsby + Netlify CMS Starter
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b654c94e-08a6-4b79-b443-7837581b1d8d/deploy-status)](https://app.netlify.com/sites/gatsby-starter-netlify-cms-ci/deploys)
 
@@ -8,7 +9,7 @@ This repo contains an example business website that is built with [Gatsby](https
 
 It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
 
-## Features
+### Features
 
 - A simple landing page with blog functionality built with Netlify CMS
 - Editable Pages: Landing, About, Product, Blog-Collection and Contact page with Netlify Form support
@@ -24,13 +25,13 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 - Perfect score on Lighthouse for SEO, Accessibility and Performance (wip:PWA)
 - ..and more
 
-## Prerequisites
+### Prerequisites
 
 - Node (I recommend using v8.2.0 or higher)
 - [Gatsby CLI](https://www.gatsbyjs.org/docs/)
 - [Netlify CLI](https://github.com/netlify/cli)
 
-## Getting Started (Recommended)
+### Getting Started (Recommended)
 
 Netlify CMS can run in any frontend web environment, but the quickest way to try it out is by running it on a pre-configured starter site with Netlify. The example here is the Kaldi coffee company template (adapted from [One Click Hugo CMS](https://github.com/netlify-templates/one-click-hugo-cms)). Use the button below to build and deploy your own copy of the repository:
 
