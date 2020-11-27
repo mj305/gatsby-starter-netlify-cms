@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: AAA Garage Door Inc.
-image: /img/home-jumbotron.jpg
+image: /img/home/home-jumbotron.jpg
 heading: Why Choose AAA Garage Door Inc?
 subheading: Same Day Service in Miami Dade, Broward, and Palm Beach Area
 subheading2: Call For Consultation
@@ -80,7 +80,7 @@ openers:
           DC Battery Backup Belt Drive Wi-Fi Garage Door Opener
       - image: /img/belt_8355w.jpg
         title: >
-          8355W
+          8355W-
         text: >
           ½ HP AC Belt Drive Wi-Fi Garage Door Opener
   chain:

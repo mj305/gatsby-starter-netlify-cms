@@ -3,20 +3,23 @@ import PropTypes, { string } from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
+import Hero from '../components/Hero'
 import Features from '../components/Features'
 import Openers from '../components/Openers'
 import BlogRoll from '../components/BlogRoll'
 
-import commercial from '../../static/img/commercial.png'
-import house from '../../static/img/house.png'
-import key from '../../static/img/key.png'
-import secondViewPortHome from '../../static/img/secondViewPortHome.jpg'
-import users from '../../static/img/users.png'
-import like from '../../static/img/like.png'
-import time from '../../static/img/time.png'
-import award from '../../static/img/award.png'
-import shake from '../../static/img/shake.png'
-import calendar from '../../static/img/calendar.png'
+import secondViewPortHome from '../../static/img/home/secondViewPortHome.jpg'
+
+//icons
+import commercial from '../../static/img/icons/commercial.png'
+import house from '../../static/img/icons/house.png'
+import key from '../../static/img/icons/key.png'
+import users from '../../static/img/icons/users.png'
+import like from '../../static/img/icons/like.png'
+import time from '../../static/img/icons/time.png'
+import award from '../../static/img/icons/award.png'
+import shake from '../../static/img/icons/shake.png'
+import calendar from '../../static/img/icons/calendar.png'
 
 import "../styles/index.sass"
 
@@ -33,36 +36,7 @@ export const IndexPageTemplate = ({
   openers
 }) => (
   <div>
-    <section className="hero is-info is-fullheight top-section"
-      style={{
-        background: `linear-gradient(70deg,#283d4b 0%,rgba(128,103,79,0.5) 100%),url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        }) no-repeat fixed center`,
-        backgroundSize: 'cover'
-      }}
-    >
-      <div className="hero-body">
-        <div className="container has-text-centered">
-          <h1 className="title is-size-2">
-            {title}
-          </h1>
-          <h1 className="subtitle">
-            {subheading}
-          </h1>
-          <a className="box is-background-success" href="tel:305-702-0113">
-            <div className="content">
-              <h5 className="has-text-white">
-                {subheading2}
-              </h5>
-              <h5 className="has-text-white">
-                {subheading3}
-              </h5>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
+    <Hero image={image} title={title} subTitle={subheading} boxTitle={subheading2} boxContent={subheading3} dark={true} />
     <section className="hero line-section"></section>
 
     <section className="tab-section">
@@ -328,7 +302,7 @@ export const IndexPageTemplate = ({
       </div>
     </section>
 
-    <section className="hero is-fullheight doors-section">        
+    <section className="hero is-fullheight doors-section">
       <div className="container">
         <div className="column is-12">
           <div className="columns is-centered header">
@@ -344,7 +318,9 @@ export const IndexPageTemplate = ({
               </h1>
             </div>
           </div>
-          <Openers gridItems={openers.jack.blurbs} />
+          <Openers data={openers.jack} />
+          <Openers data={openers.belt} />
+          <Openers data={openers.chain} />
         </div> 
       </div>
     </section>
@@ -475,7 +451,7 @@ export const pageQuery = graphql`
             blurbs {
               image {
                 childImageSharp {
-                  fluid(maxWidth: 240, quality: 64) {
+                  fluid(maxWidth: 240) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -490,7 +466,7 @@ export const pageQuery = graphql`
             blurbs {
               image {
                 childImageSharp {
-                  fluid(maxWidth: 240, quality: 64) {
+                  fluid(maxWidth: 240) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -505,7 +481,7 @@ export const pageQuery = graphql`
             blurbs {
               image {
                 childImageSharp {
-                  fluid(maxWidth: 240, quality: 64) {
+                  fluid(maxWidth: 240) {
                     ...GatsbyImageSharpFluid
                   }
                 }

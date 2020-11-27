@@ -1,19 +1,48 @@
 ---
-templateKey: 'about-page'
-path: /about
-title: About our values
+templateKey: about-page
+title: About Us
+subTitle: A Full Service Garage Doors and Gates Since 2009b
+image: /img/about/about-banner.png
+boxTitle: Call US
+boxContent: (305) 702-0113
+images:
+    left:
+        -   /img/about/door-rollers.jpg
+        -   /img/about/openers-repair.jpg
+    right:
+        -   /img/about/door-cable.jpg
+        -   /img/about/spring-repair.jpg
+main:
+    title: SINCE 2009
+    list:
+        -   title: WE ARE A FULL SERVICE GARAGE DOORS AND GATES  SHOP
+            description: >
+                AAA Garage Doors Inc.,we match the excellence of our products with exceptional services.Premium quality Local garage doors in Miami-Dade County, FL.We offer residential and commercial solutions for garage openers and overhead garage doors, such as installations, Garage Doors springs and parts replacements, maintenance and repair. From minor fixes to total garage door overhaul, our company makes it a promise to serve with absolute reliability, integrity, and commitment in presenting high-value results at reasonable rates.
+        -   title: As licensed Garage Doors professionals, we know the value of safety and security
+            description: >
+                Our company specializes in garage door services that address a variety of needs and requirements.As a trusted Local garage doors repair company, we employ highly experienced technicians and mechanics that are fully capable in fixing any garage door issues 
+wedo:
+    title: What We Do
+    residential:
+        title: RESIDENTIAL
+        text: >
+            Hurricane Impact Approved
+        image: /img/about/residential.jpg
+    commercial:
+        title: COMMERCIAL
+        text: >
+            Commercial doors include insulated and non-insulated sectional steel, aluminum , rolling, security grilles,   roll-up sheet, and coiling steel doors.
+        image: /img/about/about-commercial.jpg
+    entry:
+        title: ENTRY SYSTEM
+        text: >
+            Welcome to the next generation of Entry Control Systems … Wireless system allows quick, easy, and therefore, inexpensive installations. Access anywhere cloud ..
+        image: /img/about/entry-system.jpg
+    button: TALK WITH GARAGE DOORS EXPERT
+bottom:
+    title: Home, Commercial, Gates, You Name It, We’ll Be there.
+    subTitle: Serving Your Local Area
+    image: /img/about/about-bottom.png
+    boxTitle: Call US
+    boxContent: (305) 702-0113
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
-
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
-
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
-
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
-
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.

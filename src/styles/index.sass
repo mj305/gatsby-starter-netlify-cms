@@ -12,16 +12,6 @@
 .navbar-item img 
   max-height: 100vh !important
 
-.top-section
-  .box
-    width: 30%
-    margin: auto
-    background: #46870C
-    border-radius: 3rem
-    .content
-      h5
-        margin-bottom: 0
-
 .line-section
   padding-top: -5rem
   background: linear-gradient(180deg, rgba(101,102,102,1) 0%, rgba(232,232,232,1) 50%, rgba(255,255,255,1) 70%) 
@@ -104,6 +94,139 @@
   .columns
     article
       height: 100%
+//commercial page
+.commercial
+  .request-section
+    background-color: #d3d3d3
+    iframe
+      max-width: 100%
+      min-height: 50vh
+    .info
+      p
+        color: #008500
+        margin-bottom: 1rem
+
+//Repair Page
+.repair-swing
+  .title
+    color: #0c71c3
+  .subtitle
+    color: #666666
+.repair-bottom
+  background-color: #f7f7f7
+  .column
+    text-align: center
+  .button
+    background-color: #008500
+    color: #7cda24
+    &:hover
+      color: #7cda24
+
+//Contact Page
+.contact
+  .hero-section
+    padding: 8rem 0 14rem 0
+    iframe
+      max-width: 100%
+    .info
+      margin-left: 1.5rem
+      .heading
+        margin-bottom: 3rem
+        .button-wrapper
+          border: 5px solid #66af00
+          border-radius: 4px
+          width: fit-content
+          .button
+            background-color: #18488a
+            color: #ffffff
+            border: 0
+        .subtitle
+          margin-top: 1rem
+      .box
+        width: 50%
+  .text-section
+    margin-top: 5rem
+    .text-content
+      .title
+        color: #333333
+      .description
+        color: #666666
+    .block
+      display: flex
+      align-items: center
+      .custom-icon
+        color: #7cda24
+      .content
+        padding-left: 1rem
+        font-style: italic
+  .block-section
+    margin: 5rem 0
+    .columns
+      justify-content: center
+      .card
+        height: 100%
+        .media-left
+          margin: 0
+        .icon-container
+          width: 32px
+          display: table-cell
+        .content-container
+          display: table-cell
+          padding-left: 1rem
+          vertical-align: top
+          ul
+            padding-left: 1rem
+            list-style: unset
+      .reason .card
+        background-color: #546180
+      .commercial .card
+        background-color: #bdad9b
+      .doors .card
+        background-color: #f47a55
+.about
+  .image-text-section
+    .image-grid
+      .left-grid
+        padding-top: 3rem
+    .subtitle
+      color: #000000
+      margin-bottom: 1rem
+    .top-title
+      color: rgba(43, 51, 68, .2)    
+    .content
+      color: #666666
+  .wedo-section
+    .title
+      margin-bottom: 2rem
+    .columns
+      justify-content: center
+      .card
+        height: 100%
+    .card-content
+      position: relative
+      height: 100%
+      .icon-container
+        width: 32px
+        display: table-cell
+      .content-container
+        display: table-cell
+        padding-left: 1rem
+        vertical-align: top
+        .learn-more
+          position: absolute
+          bottom: 0
+  .custom-hero
+    .animation-top-divider
+      position: absolute
+      top: 0
+      z-index: 1
+      background-size: 200% 20vw
+      height: 20vw
+      background-repeat-y: no-repeat
+      width: 100%
+    .animation-divider
+      height: 14%
+      background-size: 230% 5vw
 
 @import "~bulma"
 
@@ -124,3 +247,7 @@
   .reason-section
     .row
       margin-top: unset
+  .commercial
+    .request-section
+      iframe
+        min-height: 70vh

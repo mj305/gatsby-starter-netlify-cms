@@ -10,8 +10,12 @@ $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #3282b8
 
-.navbar .navbar-menu
-  box-shadow:none !important
+.navbar
+  position: fixed !important
+  width: 100%
+  box-shadow: 0 0 7px rgba(0, 0, 0, .1)
+  .navbar-menu
+  // box-shadow:none !important
 
 .content .taglist
   list-style: none
@@ -123,7 +127,98 @@ $menu-label-color: $white-ter
 .blog-list-item .featured-thumbnail
   flex-basis: 35%
   margin: 0 1.5em 0 0
+.custom-icon
+  font-size: 2rem
+//Hero Section
+.hero-section
+  padding: 8rem 0
+  position: relative
+  .hero-title
+    margin-bottom: 2rem
+    .title
+      font-size: 5rem
+    .subtitle
+      font-size: 2.5rem
+  .box
+    width: 30%
+    margin: auto
+    background: #46870C
+    border-radius: 3rem
+    .content
+      h5
+        margin-bottom: 0
+  .animation-divider
+    position: absolute
+    bottom: -1px
+    transform: rotate(180deg)
+    z-index: 1
+    background-size: 200% 20vw
+    height: 20vw
+    background-repeat-y: no-repeat
+    width: 100%
 
+//Text Block Section
+.text-block-section
+  .container
+    .block
+      margin-bottom: 2rem
+      .block-title
+        .custom-icon
+          position: absolute
+          transform: translateX(-100%)
+          color: #bdad9b
+        .content
+          font-style: italic
+          color: #333333
+      .content
+        margin-top: 1rem
+        padding: 0 1rem
+        color: #666666
+      .subtitle
+        color: #333333
+        margin-bottom: 0
+//Contact Section
+.contact-section
+  .columns
+    justify-content: center
+    .block
+      .custom-icon
+        color: #008500
+        margin-bottom: 1rem
+      .icon-title
+        color: #333333
+        padding-bottom: 10px
+      .icon-text
+        color: #666666    
+
+//openers
+.openers
+  .header
+    .subtitle
+      color: #008000 !important
+  .items
+    justify-content: center
+    .wrapper
+      cursor: pointer
+      .item
+        width: 100%
+        display: inline-block
+    .item-title
+      color: #0071bb
+      font-size: 1.2rem
+      font-weight: 600
+      text-align: center
+      margin: 2rem auto auto auto
+.text-with-image-section
+  .block 
+    .block-title
+      margin-bottom: 1rem
+      color: #333333
+      font-size: 1.2rem
+    .content
+      color: #666666
+  .columns
+    justify-content: center
 
 @import "~bulma"
 
@@ -139,7 +234,19 @@ $menu-label-color: $white-ter
     text-align: center
     max-width: 70%
     margin: 0 0 1em
+  .custom-icon
+    font-size: 1.5rem
   .features
     .section
       padding: 0
-
+  .hero-section
+    .hero-title 
+      .title
+        font-size: 2rem
+      .subtitle
+        font-size: 1.5rem
+    .box
+      width: unset !important
+  .openers
+    .section
+      padding: 0

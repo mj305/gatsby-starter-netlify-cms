@@ -2,50 +2,51 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-const OpenersGrid = ({ gridItems }) => (
-  <div className="columns is-multiline features">
-    {gridItems.map((item) => (
-      <div key={item.text} className="column is-6">
-        <section className="section">
-          <div 
-           style={{
-            cursor: 'pointer',
-           }}
-          className="has-text-centered">
-            <div
-              style={{
-                width: '100%',
-                display: 'inline-block',
-              }}
-            >
-              <PreviewCompatibleImage imageInfo={item} />
-            </div>
-          </div>
-          <p
-          style={{
-            color: 'grey',
-            fontSize: '1.2rem',
-            fontWeight: '600',
-            textAlign: 'center',  
-            margin: '2rem auto auto auto',
-           }}
-          >{item.title}</p>
-          <h1 className="subtitle">
-            {item.text}
-          </h1>
-        </section>
+const OpenersGrid = ({ data }) => (
+  <div className="openers">
+    <div className="columns is-centered header">
+      <div className="column is-10">
+        <h1 className="subtitle has-text-weight-bold has-text-centered">
+          {data.title}
+        </h1>
+        <p className="has-text-centered">
+          {data.description}
+        </p>
       </div>
-    ))}
+    </div>
+    <div className="columns is-multiline items">
+      {data.blurbs.map((item) => (
+        <div key={item.text} 
+          className={data.blurbs.length % 3 === 0 ? `column is-4` : `column is-6` }
+        >
+          <section className="section">
+            <div className="wrapper has-text-centered">
+              <div className="item">
+                <PreviewCompatibleImage imageInfo={item} />
+              </div>
+            </div>
+            <p className="item-title">{item.title}</p>
+            <h1 className="subtitle has-text-centered">
+              {item.text}
+            </h1>
+          </section>
+        </div>
+      ))}
+    </div>
   </div>
 )
 
 OpenersGrid.propTypes = {
-  gridItems: PropTypes.arrayOf(
-    PropTypes.shape({
-      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-      text: PropTypes.string,
-    })
-  ),
+  data: PropTypes.shape({
+    title: PropTypes.string,
+    description: PropTypes.string,
+    blurbs: PropTypes.arrayOf(
+      PropTypes.shape({
+        image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+        text: PropTypes.string,
+      })
+    )
+  })
 }
 
 export default OpenersGrid

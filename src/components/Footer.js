@@ -86,7 +86,6 @@ const Footer = class extends React.Component {
                 </a>
                 <a title="twitter" href="https://twitter.com/InfoGaragedoor" target="blank">
                   <img
-                    className="fas fa-lg"
                     src={twitter}
                     alt="Twitter"
                     sstyle={{ width: '1em', height: '1em', }}
