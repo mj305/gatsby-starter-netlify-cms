@@ -38,11 +38,11 @@ const Navbar = class extends React.Component {
           <Link className="navbar-item" href="/">
             <img src={logo} alt="AAA Garage Door Inc Same Day Service Miami Dade Broward Palm Beach" width="150" height="50" />
           </Link>
-          <a role="button" className={`navbar-burger burger ${this.state.navBarActiveClass}`} onClick={this.toggleHamburger} aria-label="menu" aria-expanded="false" data-target="navbarExampleTransparentExample">
+          <p role="button" className={`navbar-burger burger ${this.state.navBarActiveClass}`} onClick={this.toggleHamburger} onKeyDown={this.toggleHamburger} aria-label="menu" aria-expanded="false" data-target="navbarExampleTransparentExample">
             <span></span>
             <span></span>
             <span></span>
-          </a>
+          </p>
         </div>
       
         <div id="navbarExampleTransparentExample" className={`navbar-menu ${this.state.navBarActiveClass}`}>

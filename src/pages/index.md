@@ -27,15 +27,19 @@ intro:
     - image: /img/coachman.png
       text: >
         COACHMAN® Collection
+      link: /products/coatchman/
     - image: /img/canyonRidgeModern.png
       text: >
         CANYON RIDGE® Collection MODERN Series
+      link: /products/coatchman/
     - image: /img/canyonRidgeUltraGrain.png
       text: >
         CANYON RIDGE® Collection ULTRA-GRAIN® Series
+      link: /products/coatchman/
     - image: /img/canionRidgeLimitedEdition.png
       text: >
         CANYON RIDGE® Collection LIMITED EDITION Series.
+      link: /products/coatchman/
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
@@ -53,11 +57,12 @@ openers:
     description: >
       LiftMaster wall-mount garage door openers mount on the wall next to the garage door, freeing up the space overhead and opening up the possibilities to maximize your garage space.
     blurbs:
-      - image: /img/jack_8500W.jpg
+      - image: /img/jack_8500W.png
         title: >
           8500W
         text: >
           DC Battery Backup Wall Mount Wi-Fi Garage Door Opener
+        link: /products/jack-8500w/
       - image: /img/jack_8500.jpg
         title: >
           8500

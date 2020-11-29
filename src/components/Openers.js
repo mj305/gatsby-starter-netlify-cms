@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import {Link} from 'gatsby'
 
 const OpenersGrid = ({ data }) => (
   <div className="openers">
@@ -16,20 +17,23 @@ const OpenersGrid = ({ data }) => (
     </div>
     <div className="columns is-multiline items">
       {data.blurbs.map((item) => (
+       
         <div key={item.text} 
           className={data.blurbs.length % 3 === 0 ? `column is-4` : `column is-6` }
         >
-          <section className="section">
-            <div className="wrapper has-text-centered">
-              <div className="item">
-                <PreviewCompatibleImage imageInfo={item} />
+           <Link to={item.link}>
+            <section className="section">
+              <div className="wrapper has-text-centered">
+                <div className="item">
+                  <PreviewCompatibleImage imageInfo={item} />
+                </div>
               </div>
-            </div>
-            <p className="item-title">{item.title}</p>
-            <h1 className="subtitle has-text-centered">
-              {item.text}
-            </h1>
-          </section>
+              <p className="item-title">{item.title}</p>
+              <h1 className="subtitle has-text-centered">
+                {item.text}
+              </h1>
+            </section>
+          </Link>
         </div>
       ))}
     </div>

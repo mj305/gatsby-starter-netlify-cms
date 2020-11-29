@@ -431,12 +431,13 @@ export const pageQuery = graphql`
           blurbs {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
+                fluid(maxWidth: 240, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
             }
             text
+            link
           }
           heading
           description
@@ -451,13 +452,14 @@ export const pageQuery = graphql`
             blurbs {
               image {
                 childImageSharp {
-                  fluid(maxWidth: 240) {
+                  fluid(maxWidth: 240,  quality: 100) {
                     ...GatsbyImageSharpFluid
                   }
                 }
               }
               title
               text
+              link
             }
           }
           belt {
@@ -466,7 +468,7 @@ export const pageQuery = graphql`
             blurbs {
               image {
                 childImageSharp {
-                  fluid(maxWidth: 240) {
+                  fluid(maxWidth: 240,  quality: 100) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -481,7 +483,7 @@ export const pageQuery = graphql`
             blurbs {
               image {
                 childImageSharp {
-                  fluid(maxWidth: 240) {
+                  fluid(maxWidth: 240,  quality: 100) {
                     ...GatsbyImageSharpFluid
                   }
                 }

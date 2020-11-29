@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes, { string } from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
@@ -176,7 +176,7 @@ export const AboutPageTemplate = ({
               <h5 className="has-text-white is-size-4">
                 {bottom.boxTitle}
               </h5>
-              <h5 className="has-text-info is-size-5">
+              <h5 className="has-text-white is-size-5">
                 {bottom.boxContent}
               </h5>
             </div>

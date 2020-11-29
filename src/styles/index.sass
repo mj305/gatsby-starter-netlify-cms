@@ -9,6 +9,9 @@
   display: block
 
 //custom
+.custom-title
+  margin-bottom: 3rem
+  color: #333333
 .navbar-item img 
   max-height: 100vh !important
 
@@ -17,6 +20,12 @@
   background: linear-gradient(180deg, rgba(101,102,102,1) 0%, rgba(232,232,232,1) 50%, rgba(255,255,255,1) 70%) 
   opacity: 60%    
   height: 30vh
+
+.alignRight
+  float: right
+
+.alignLeft
+  float: left
 
 .wedo-section
   position: relative
@@ -227,6 +236,107 @@
     .animation-divider
       height: 14%
       background-size: 230% 5vw
+.jack
+  .hero-section
+    position: relative
+    .divider
+      position: absolute
+      background-repeat-y: no-repeat
+      background-size: 100% 193px
+      bottom: 0
+      height: 193px
+      width: 100%
+      z-index: 1
+    ul
+      list-style: unset
+    .button
+      background-color: #f7d584
+      color: rgba(0, 0, 0, 0.7)
+      margin-top: 3rem
+  .image-text-section
+    color: #333333
+    .default
+      color: #666666
+    .column
+      padding: 0 1rem
+    .item
+      margin-bottom: 1rem
+    .item-image
+      box-shadow: 21px 30px 0 0 rgba(12, 113, 195, 0.5)
+      margin: 0 3rem 3rem -3rem
+  .video-section
+    .iframe
+      position: relative
+      width: 100%
+      padding-top: 50%
+      margin-top: 1rem
+      iframe
+        position: absolute
+        top: 0
+        height: 100%
+        width: 100%
+  .warranty-section
+    ul
+      list-style: unset
+      color: #666666
+//Collection
+.collection
+  .top-section
+    padding: 8rem 0
+    .thumbnails
+      margin-top: 1rem
+    .icons
+      img
+        height: unset !important
+        width: unset !important
+  .tab-section
+    .tab-box
+      padding: 0
+      border: 1px solid #d9d9d9
+      .tabs
+        ul
+          background-color: #f4f4f4
+          li a
+            border-width: 0 1px
+            border-radius: 0
+          li:first-child a
+            border-left-width: 0
+    .alignRight
+      margin-top: 2rem
+    .tab-content
+      padding: 0 2rem 2rem
+      .description
+        .block
+          margin-top: 1rem
+          ul
+            list-style: unset
+            padding-left: 23px
+        .iframe
+          position: relative
+          width: 100%
+          padding-top: 50%
+          margin-top: 1rem
+          iframe
+            position: absolute
+            top: 0
+            height: 100%
+            width: 100%
+        .bottom
+          margin-top: 3rem
+      .options
+        .design-title
+          margin-top: 1rem
+        .item-title
+          margin-top: 1rem
+      .construction
+        ol
+          padding-left: 23px
+        ul
+          padding-left: 30px
+          list-style: unset
+        .block
+          margin-top: 2rem
+
 
 @import "~bulma"
 
