@@ -1,12 +1,9 @@
+/* eslint-disable */
 import React from 'react'
-import PropTypes, { string } from 'prop-types'
+import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import Hero from '../components/Hero'
-import Contact from '../components/Contact'
-import Liner from '../components/Liner'
-import jackSVG from '../../static/img/svg/jack.svg'
 import Img from 'gatsby-image'
 
 
@@ -75,11 +72,11 @@ export const CollectionPageTemplate = ({
             <div className="column tab-box is-10 is-offset-1">
               <div className="tabs is-boxed">
                 <ul>
-                  <li className={ activeTab === "description" ? "is-active" : ""} onClick={() => changeActiveTab("description")} ><a>Description</a></li>
-                  <li className={ activeTab === "options" ? "is-active" : ""} onClick={() => changeActiveTab("options")}><a>Design Options</a></li>
-                  <li className={ activeTab === "construction" ? "is-active" : ""} onClick={() => changeActiveTab("construction")}><a>CONSTRUCTION</a></li>
-                  <li className={ activeTab === "colors" ? "is-active" : ""} onClick={() => changeActiveTab("colors")}><a>COLORS</a></li>
-                  <li className={ activeTab === "hardware" ? "is-active" : ""} onClick={() => changeActiveTab("hardware")}><a>HARDWARE DESIGNS</a></li>
+                  <li className={ activeTab === "description" ? "is-active" : ""} onClick={() => changeActiveTab("description")} onKeyDown={changeActiveTab} ><a>Description</a></li>
+                  <li className={ activeTab === "options" ? "is-active" : ""} onClick={() => changeActiveTab("options")} onKeyDown={changeActiveTab}><a>Design Options</a></li>
+                  <li className={ activeTab === "construction" ? "is-active" : ""} onClick={() => changeActiveTab("construction")} onKeyDown={changeActiveTab}><a>CONSTRUCTION</a></li>
+                  <li className={ activeTab === "colors" ? "is-active" : ""} onClick={() => changeActiveTab("colors")} onKeyDown={changeActiveTab}><a>COLORS</a></li>
+                  <li className={ activeTab === "hardware" ? "is-active" : ""} onClick={() => changeActiveTab("hardware")} onKeyDown={changeActiveTab}><a>HARDWARE DESIGNS</a></li>
                 </ul>
               </div>
               <div className="tab-content">

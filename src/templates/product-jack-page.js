@@ -1,10 +1,8 @@
 import React from 'react'
-import PropTypes, { string } from 'prop-types'
+import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import Hero from '../components/Hero'
-import Contact from '../components/Contact'
 import Liner from '../components/Liner'
 import jackSVG from '../../static/img/svg/jack.svg'
 import Img from 'gatsby-image'
@@ -53,7 +51,7 @@ export const JackPageTemplate = ({
                     ))
                   }
                 </ul>
-                <a className="button is-medium" href="#">VIEW MORE</a>
+                <a className="button is-medium" href="/#">VIEW MORE</a>
               </div>
             </div>
           </div>          

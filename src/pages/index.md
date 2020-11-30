@@ -31,15 +31,24 @@ intro:
     - image: /img/canyonRidgeModern.png
       text: >
         CANYON RIDGE® Collection MODERN Series
-      link: /products/coatchman/
     - image: /img/canyonRidgeUltraGrain.png
       text: >
         CANYON RIDGE® Collection ULTRA-GRAIN® Series
-      link: /products/coatchman/
     - image: /img/canionRidgeLimitedEdition.png
       text: >
         CANYON RIDGE® Collection LIMITED EDITION Series.
-      link: /products/coatchman/
+    - image: /img/comparegallery-1.jpg
+      text: >
+        GALLERY® collection
+    - image: /img/comparemodernsteel-1.jpg
+      text: >
+        MODERN STEEL™ collection
+    - image: /img/compareavante-1.jpg
+      text: >
+        AVANTE® collection
+    - image: /img/compareclassic.jpg
+      text: >
+        CLASSIC™ collection
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their

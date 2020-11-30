@@ -38,8 +38,8 @@ const Navbar = class extends React.Component {
           <Link className="navbar-item" href="/">
             <img src={logo} alt="AAA Garage Door Inc Same Day Service Miami Dade Broward Palm Beach" width="150" height="50" />
           </Link>
-          <p role="button" className={`navbar-burger burger ${this.state.navBarActiveClass}`} onClick={this.toggleHamburger} onKeyDown={this.toggleHamburger} aria-label="menu" aria-expanded="false" data-target="navbarExampleTransparentExample">
-            <span></span>
+          <p key="but" role="button" className={`navbar-burger burger ${this.state.navBarActiveClass}`} onClick={this.toggleHamburger} onKeyDown={this.toggleHamburger} aria-label="menu" aria-expanded="false" data-target="navbarExampleTransparentExample"> {// eslint-disable-line
+            }<span></span>
             <span></span>
             <span></span>
           </p>
@@ -48,7 +48,7 @@ const Navbar = class extends React.Component {
         <div id="navbarExampleTransparentExample" className={`navbar-menu ${this.state.navBarActiveClass}`}>
           <div className="navbar-start">
             <div className="navbar-item has-dropdown is-hoverable">
-              <Link className="navbar-link" href="#">
+              <Link className="navbar-link" href="/">
                 Residential Services
               </Link>
               <div className="navbar-dropdown is-boxed">
@@ -57,7 +57,7 @@ const Navbar = class extends React.Component {
                       fontSize: '1rem',
                       fontWeight: '600',
                   }}
-                className="navbar-item" href="#">
+                className="navbar-item" href="/">
                   Residential Doors
                 </Link>
 
@@ -68,18 +68,18 @@ const Navbar = class extends React.Component {
                     fontSize: '1rem',
                     fontWeight: '600',
                 }}
-                className="navbar-item" href="#">
+                className="navbar-item" href="/">
                   Garage Door Openers
                 </Link>
 
                 
-                <Link className="navbar-item" href="#">
+                <Link className="navbar-item" href="/">
                   Jack Shaft Openers
                 </Link>
-                <Link className="navbar-item" href="#">
+                <Link className="navbar-item" href="/">
                   Chain Openers
                 </Link>
-                <Link className="navbar-item" href="#">
+                <Link className="navbar-item" href="/">
                   Belt Drive Openers
                 </Link>
               </div>            
