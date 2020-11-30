@@ -31,7 +31,7 @@ export const ContactPageTemplate = ({
         backgroundSize: 'cover'
       }}
     >
-      <div className="hero-body">
+      <div className="section">
         <div className="container">
           <div className="hero-title has-text-centered">
             <h1 className="title">
