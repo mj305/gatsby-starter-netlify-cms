@@ -33,15 +33,15 @@ const Footer = class extends React.Component {
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" /* to="/about" */ to="#">
+                      <Link className="navbar-item" to="/about" >
                         About
                       </Link>
                     </li>
-                    <li>
-                      <Link className="navbar-item" /* to="/products" */ to="#">
+{/*                     <li>
+                      <Link className="navbar-item" to="/products" >
                         Products
                       </Link>
-                    </li>
+                    </li> */}
 
                     <li>
                       <a
@@ -64,12 +64,12 @@ const Footer = class extends React.Component {
                   }}
                   >
                     <li>
-                      <Link className="navbar-item" /* to="/blog" */ to="#">
+                      <Link className="navbar-item" to="/blog">
                         Blog
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" /* to="/contact" */ to="#">
+                      <Link className="navbar-item" to="/contact">
                         Contact
                       </Link>
                     </li>
