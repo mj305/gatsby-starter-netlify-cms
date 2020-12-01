@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: AAA Garage Door Inc.
-image: /img/home/home-jumbotron.jpg
+image: /img/home-jumbotron.jpg
 heading: Why Choose AAA Garage Door Inc?
 subheading: Same Day Service in Miami Dade, Broward, and Palm Beach Area
 subheading2: Call For Consultation
