@@ -358,9 +358,11 @@ IndexPageTemplate.propTypes = {
   description: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
+    heading: string,
+    description: string,
   }),
   openers: PropTypes.shape({
-    title: string,
+    heading: string,
     subheading: string,
     description: string,
     jack: PropTypes.shape({
