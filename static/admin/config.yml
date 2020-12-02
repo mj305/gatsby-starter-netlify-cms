@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: master
+  local_backend: true
   commit_messages:
     create: "Create {{collection}} “{{slug}}”"
     update: "Update {{collection}} “{{slug}}”"
@@ -78,47 +79,80 @@ collections:
                       [
                         { label: Image, name: image, widget: image },
                         { label: Text, name: text, widget: text },
+                        { label: Link, name: link, widget: string },
                       ],
                   },
                 ],
             }
           - {
-              label: Main,
-              name: main,
+              label: Garage Door Openers,
+              name: openers,
               widget: object,
               fields:
                 [
                   { label: Heading, name: heading, widget: string },
+                  { label: SubHeading, name: subheading, widget: string },
                   { label: Description, name: description, widget: text },
-                  {
-                    label: Image1,
-                    name: image1,
+                  { 
+                    label: Jack Shaft Openers, 
+                    name: jack, 
                     widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
+                    fields: [
+                      { label: Title, name: title, widget: string },
+                      { label: Description, name: description, widget: text },
+                      {
+                        label: Blurbs,
+                        name: blurbs,
+                        widget: list,
+                        fields:
+                          [
+                            { label: Image, name: image, widget: image },
+                            { label: Title, name: title, widget: text },
+                            { label: Text, name: text, widget: text },
+                            { label: Link, name: link, widget: string },
+                          ],
+                      },
+                    ]
                   },
-                  {
-                    label: Image2,
-                    name: image2,
+                  { 
+                    label: Belt Drive Openers, 
+                    name: belt, 
                     widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
+                    fields: [
+                      { label: Title, name: title, widget: string },
+                      { label: Description, name: description, widget: text },
+                      {
+                        label: Blurbs,
+                        name: blurbs,
+                        widget: list,
+                        fields:
+                          [
+                            { label: Image, name: image, widget: image },
+                            { label: Title, name: title, widget: text },
+                            { label: Text, name: text, widget: text },
+                          ],
+                      },
+                    ]
                   },
-                  {
-                    label: Image3,
-                    name: image3,
+                  { 
+                    label: Chain Openers, 
+                    name: chain, 
                     widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
+                    fields: [
+                      { label: Title, name: title, widget: string },
+                      { label: Description, name: description, widget: text },
+                      {
+                        label: Blurbs,
+                        name: blurbs,
+                        widget: list,
+                        fields:
+                          [
+                            { label: Image, name: image, widget: image },
+                            { label: Title, name: title, widget: text },
+                            { label: Text, name: text, widget: text },
+                          ],
+                      },
+                    ]
                   },
                 ],
             }
