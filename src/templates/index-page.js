@@ -8,18 +8,18 @@ import Features from '../components/Features'
 import Openers from '../components/Openers'
 import BlogRoll from '../components/BlogRoll'
 
-import secondViewPortHome from '../../static/img/home/secondViewPortHome.jpg'
+import secondViewPortHome from '../../static/img/secondViewPortHome.jpg'
 
 //icons
-import commercial from '../../static/img/icons/commercial.png'
-import house from '../../static/img/icons/house.png'
-import key from '../../static/img/icons/key.png'
-import users from '../../static/img/icons/users.png'
-import like from '../../static/img/icons/like.png'
-import time from '../../static/img/icons/time.png'
-import award from '../../static/img/icons/award.png'
-import shake from '../../static/img/icons/shake.png'
-import calendar from '../../static/img/icons/calendar.png'
+import commercial from '../../static/img/commercial.png'
+import house from '../../static/img/house.png'
+import key from '../../static/img/key.png'
+import users from '../../static/img/users.png'
+import like from '../../static/img/like.png'
+import time from '../../static/img/time.png'
+import award from '../../static/img/award.png'
+import shake from '../../static/img/shake.png'
+import calendar from '../../static/img/calendar.png'
 
 import "../styles/index.sass"
 

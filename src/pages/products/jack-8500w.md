@@ -7,7 +7,7 @@ list:
     -   Minimizes noise and vibration.
     -   Works during a power outage.
     -   Includes myQ Remote LED Light and Automatic Garage Door Lock.
-image: /img/jack-pro/8500W_family_2.png
+image: /img/8500W_family_2.png
 leftIntro:
     -   type: text
         items: 
@@ -24,7 +24,7 @@ leftIntro:
                     Syncs with popular smart devices and platforms*.
                     *Linking your myQ account to Google Assistant and/or IFTTT requires subscription fee of $1 a month or $10 for an annual subscription. See full list of partners at myq.com.
     -   type: image
-        image: /img/jack-pro/jack-pro-left.jpg
+        image: /img/jack-pro-left.jpg
     -   type: text
         items: 
             -   title: Safety and Security
@@ -38,7 +38,7 @@ leftIntro:
                 text: Protect people and vehicles with safety sensors that stop the door from closing on obstructions.
 rightIntro:
     -   type: image
-        image: /img/jack-pro/jack-pro-right-top.jpg
+        image: /img/jack-pro-right-top.jpg
     -   type: text
         items: 
             -   title: Power
@@ -49,7 +49,7 @@ rightIntro:
             -   title: Battery Backup
                 text: Get in and out when the power’s out with Battery Backup. Meets California SB-969.
     -   type: image
-        image: /img/jack-pro/jack-pro-right-bottom.jpg
+        image: /img/jack-pro-right-bottom.jpg
 video:
     title: Liftmaster 8500W vs 8500 Side by Side Comparison
     embed: https://www.youtube.com/embed/wNJ8qJD8wk8
@@ -82,16 +82,16 @@ warranty:
 include:
     title: WHAT’S INCLUDED
     items:
-        -   image: /img/jack-pro/841LM_hero_1.jpg
+        -   image: /img/841LM_hero_1.jpg
             title: 841LM
             text: Automatic Garage Door Lock
-        -   image: /img/jack-pro/893MAX_hero_1.jpg
+        -   image: /img/893MAX_hero_1.jpg
             title: 893Max
             text: 3-Button Visor Remote Control
-        -   image: /img/jack-pro/485LM_hero_1.jpg
+        -   image: /img/485LM_hero_1.jpg
             title: 485LM
             text: Garage Door Opener Battery
-        -   image: /img/jack-pro/827LM_hero_1.jpg
+        -   image: /img/827LM_hero_1.jpg
             title: 827LM
             text:  MQ Remote Led Light
 ---

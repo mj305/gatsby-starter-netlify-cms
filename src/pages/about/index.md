@@ -2,16 +2,16 @@
 templateKey: about-page
 title: About Us
 subTitle: A Full Service Garage Doors and Gates Since 2009b
-image: /img/about/about-banner.png
+image: /img/about-banner.png
 boxTitle: Call US
 boxContent: (305) 702-0113
 images:
     left:
-        -   /img/about/door-rollers.jpg
-        -   /img/about/openers-repair.jpg
+        -   /img/door-rollers.jpg
+        -   /img/openers-repair.jpg
     right:
-        -   /img/about/door-cable.jpg
-        -   /img/about/spring-repair.jpg
+        -   /img/door-cable.jpg
+        -   /img/spring-repair.jpg
 main:
     title: SINCE 2009
     list:
@@ -27,22 +27,22 @@ wedo:
         title: RESIDENTIAL
         text: >
             Hurricane Impact Approved
-        image: /img/about/residential.jpg
+        image: /img/residential.jpg
     commercial:
         title: COMMERCIAL
         text: >
             Commercial doors include insulated and non-insulated sectional steel, aluminum , rolling, security grilles,   roll-up sheet, and coiling steel doors.
-        image: /img/about/about-commercial.jpg
+        image: /img/about-commercial.jpg
     entry:
         title: ENTRY SYSTEM
         text: >
             Welcome to the next generation of Entry Control Systems … Wireless system allows quick, easy, and therefore, inexpensive installations. Access anywhere cloud ..
-        image: /img/about/entry-system.jpg
+        image: /img/entry-system.jpg
     button: TALK WITH GARAGE DOORS EXPERT
 bottom:
     title: Home, Commercial, Gates, You Name It, We’ll Be there.
     subTitle: Serving Your Local Area
-    image: /img/about/about-bottom.png
+    image: /img/about-bottom.png
     boxTitle: Call US
     boxContent: (305) 702-0113
 ---

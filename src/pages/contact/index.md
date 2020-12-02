@@ -2,7 +2,7 @@
 templateKey: contact-page
 title: Contact AAA Garage Doors™
 subTitle: Serving Miami-Dade and Broward Counties
-image: /img/contact/contact-banner.jpg
+image: /img/contact-banner.jpg
 buttom: Quick Quote
 heading: AAA Garage Doors Inc.
 subHeading: 19200 SW 106th Ave. Unit 4 Miami ,FL , 33157

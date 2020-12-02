@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import darkDivider from '../../static/img/icons/dark-divider.svg'
-import whiteDivder from '../../static/img/icons/white-divider.svg'
+import darkDivider from '../../static/img/dark-divider.svg'
+import whiteDivder from '../../static/img/white-divider.svg'
 
 const Hero = ({ image, title, subTitle, boxTitle, boxContent, half, dark }) => (
     <section className={half ? "hero is-info is-halfheight hero-section" : "hero is-info is-fullheight hero-section"}

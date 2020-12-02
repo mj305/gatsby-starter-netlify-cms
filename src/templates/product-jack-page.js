@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Liner from '../components/Liner'
-import jackSVG from '../../static/img/svg/jack.svg'
+import jackSVG from '../../static/img/jack.svg'
 import Img from 'gatsby-image'
 
 

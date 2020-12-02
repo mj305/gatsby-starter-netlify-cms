@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Contact from '../components/Contact'
-import whiteDivder from '../../static/img/icons/white-divider.svg'
+import whiteDivder from '../../static/img/white-divider.svg'
 
 import "../styles/index.sass"
 

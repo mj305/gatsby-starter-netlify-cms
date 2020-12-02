@@ -1,7 +1,7 @@
 ---
 templateKey: commercial-page
 title: Commercial Services
-image: /img/commercial/top.jpg
+image: /img/top.jpg
 subTitle: Serving Your Local Area
 boxTitle: Call For Consultation
 boxContent: (305) 702-0113
@@ -26,29 +26,29 @@ products:
         blurbs:
             -   title: ARCHITECTURAL SERIES
                 text: Steel Insulated Full View Doors and Aluminum Full View Doors
-                image: /img/commercial/architectural.jpg
+                image: /img/architectural.jpg
             -   title: ENERGY SERIES WITH INTELLICORE®
                 text: Polyurethane Insulated Commercial Steel Doors R-values to 22.2
-                image: /img/commercial/intellicore.png
+                image: /img/intellicore.png
             -   title: ENERGY SERIES
                 text: Polystyrene Insulated Commercial Steel Doors R-values to 9.1
-                image: /img/commercial/energy.jpg
+                image: /img/energy.jpg
             -   title: INDUSTRIAL SERIEs
                 text: Ribbed Steel Commercial Doors Available with or without Insulation
-                image: /img/commercial/industrial.jpg
+                image: /img/industrial.jpg
     steel:
         title: ROLLING COMMERCIAL STEEL DOORS
         blurbs:
             -   title: Service Doors
                 text: Roll-Up Aluminum or Steel Commercial Doors with or without Insulation
-                image: /img/commercial/service.jpg
+                image: /img/service.jpg
             -   title: COUNTER DOORS / SHUTTERS
                 text: Coiling Steel Doors / Shutters to Secure Counter Openings & Similar Areas
-                image: /img/commercial/counter.jpg
+                image: /img/counter.jpg
             -   title: SECURITY GRILLES
                 text: Coiling Aluminum or Steel Grilles to Secure Areas Requiring Visual Access and Air Circulation
-                image: /img/commercial/security.jpg
+                image: /img/security.jpg
             -   title: ROLL-UP SHEET DOORS
                 text: Coiling Steel Sheet Doors Available in A Range of Gauges and Colors
-                image: /img/commercial/rollup.jpg
+                image: /img/rollup.jpg
 ---
