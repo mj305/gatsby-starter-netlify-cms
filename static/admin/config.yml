@@ -156,9 +156,6 @@ collections:
                   },
                 ],
             }
-  - name: "pages"
-    label: "Pages"
-    files:
       - file: "src/pages/commercial/index.md"
         label: "Commercial Page"
         name: "commercial"
