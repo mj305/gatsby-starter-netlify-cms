@@ -156,3 +156,76 @@ collections:
                   },
                 ],
             }
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/pages/commercial/index.md"
+        label: "Commercial Page"
+        name: "commercial"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "commercial-page",
+            }
+          - { label: Title, name: title, widget: string },
+          - { label: SubTitle, name: subTitle, widget: string },
+          - { label: Image, name: image, widget: image },
+          - { label: Call Box Title, name: boxTitle, widget: string },
+          - { label: Number, name: boxContent, widget: string },
+          - {
+              label: Content, 
+              name: content, 
+              widget: list,
+              fields: [
+                { label: Title, name: title, widget: string },
+                { label: Bold Text, name: boldText, widget: text },
+                { label: Description, name: description, widget: text },
+              ],
+            },
+          - {
+              label: Products, 
+              name: products, 
+              widget: object,
+              fields: [
+                { label: Title, name: title, widget: string },
+                { label: SubTitle, name: subTitle, widget: string },
+                { 
+                  label: Sectional, 
+                  name: sectional, 
+                  widget: object,
+                  fields: [
+                    { label: Title, name: title, widget: string },
+                    { 
+                      label: Blurbs, 
+                      name: blurbs, 
+                      widget: list,
+                      fields: [
+                        { label: Title, name: title, widget: string },
+                        { label: Text, name: text, widget: string },
+                        { label: Image, name: image, widget: image },
+                      ]
+                    }
+                  ],
+                },
+                { 
+                  label: Steel, 
+                  name: steel, 
+                  widget: object,
+                  fields: [
+                    { label: Title, name: title, widget: string },
+                    { 
+                      label: Blurbs, 
+                      name: blurbs, 
+                      widget: list,
+                      fields: [
+                        { label: Title, name: title, widget: string },
+                        { label: Text, name: text, widget: string },
+                        { label: Image, name: image, widget: image },
+                      ]
+                    }
+                  ],
+                },
+              ],
+            },
