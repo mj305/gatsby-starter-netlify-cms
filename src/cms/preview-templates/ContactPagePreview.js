@@ -1,20 +1,25 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { CommercialPageTemplate } from '../../templates/commercial-page'
+import { ContactPageTemplate } from '../../templates/contact-page'
 
-const CommercialPagePreview = ({ entry, getAsset }) => {
+const ContactPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
 
   if (data) {
     return (
-      <CommercialPageTemplate
+      <ContactPageTemplate
         image={getAsset(data.image)}
         title={data.title}
         subTitle={data.subTitle}
+        heading={data.heading}
+        subHeading={data.subHeading}
         boxTitle={data.boxTitle}
         boxContent={data.boxContent}
-        content={data.content || [] }
-        products={data.products || {}}
+        left={data.left || {}}
+        right={data.right || []}
+        reason={data.reason || {}}
+        commercial={data.commercial || {}}
+        doors={data.doors || {}}
       />
     )
   } else {
@@ -22,11 +27,11 @@ const CommercialPagePreview = ({ entry, getAsset }) => {
   }
 }
 
-CommercialPagePreview.propTypes = {
+ContactPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
   getAsset: PropTypes.func,
 }
 
-export default CommercialPagePreview
+export default ContactPagePreview

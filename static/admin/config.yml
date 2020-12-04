@@ -266,7 +266,7 @@ collections:
                   ]
                 }
               ],
-            },
+            }
           - { 
               label: Bottom,
               name: bottom, 
@@ -275,4 +275,58 @@ collections:
                 { label: Text, name: text, widget: string },
                 { label: Botton, name: button, widget: string },
               ],
-            },
+            }
+      - file: "src/pages/contact/index.md"
+        label: "Contact Page"
+        name: "contact"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "contact-page",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: text }
+          - { label: Image, name: image, widget: image }
+          - { label: Button Text, name: button, widget: string }
+          - { label: Heading, name: heading, widget: string }
+          - { label: Call Box Title, name: boxTitle, widget: string }
+          - { label: Number, name: boxContent, widget: string }
+          - {
+              label: Left Content, 
+              name: left, 
+              widget: object,
+              fields: [
+                { label: Title, name: title, widget: string },
+                { label: Description, name: description, widget: text },
+              ],
+            }
+          - { label: Right List, name: right, widget: list }
+          - { 
+              label: Reason Box,
+              name: reason, 
+              widget: object,
+              fields: [
+                { label: Title, name: title, widget: string },
+                { label: List, name: list, widget: list },
+              ],
+            }
+          - { 
+              label: Commercial Box,
+              name: commercial, 
+              widget: object,
+              fields: [
+                { label: Title, name: title, widget: string },
+                { label: List, name: list, widget: list },
+              ],
+            }
+          - { 
+              label: Doors Box,
+              name: doors, 
+              widget: object,
+              fields: [
+                { label: Title, name: title, widget: string },
+                { label: Text, name: text, widget: text },
+              ],
+            }
