@@ -527,7 +527,7 @@ collections:
                   },
                 ],
             }
-      - file: "src/pages/products/coatchman.md"
+      - file: "src/pages/products/coachman.md"
         label: "Residential Doors Coachman Collection Page"
         name: "coachman"
         fields:
@@ -727,4 +727,4 @@ collections:
                       ],
                   },
                 ],
-            },
+            }
