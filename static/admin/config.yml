@@ -527,3 +527,204 @@ collections:
                   },
                 ],
             }
+      - file: "src/pages/products/coatchman.md"
+        label: "Residential Doors Coachman Collection Page"
+        name: "coachman"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "product-collection-page",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subtitle, widget: string }
+          - { label: Text, name: text, widget: text }
+          - { label: Image, name: image, widget: image }
+          - { 
+              label: Thumbnails, 
+              name: thumb, 
+              widget: list,
+            }
+          - { 
+              label: Icons, 
+              name: icons, 
+              widget: list,
+            }
+          - {
+              label: Description Tab,
+              name: descriptionTab,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Text, name: text, widget: text },
+                  { label: Image, name: image, widget: image },
+                  {
+                    label: Description,
+                    name: description,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: List, name: list, widget: list },
+                      ],
+                  },
+                  { label: Images, name: images, widget: list },
+                  {
+                    label: Bottom,
+                    name: bottom,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Title, name: title, widget: string },
+                        { label: Text, name: text, widget: text },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Design Options Tab,
+              name: options,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Image, name: image, widget: image },
+                  {
+                    label: Designs,
+                    name: designs,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        { 
+                          label: Items, 
+                          name: items, 
+                          widget: list,
+                          fields: [
+                            { label: Title, name: title, widget: string },
+                            { 
+                              label: Images, 
+                              name: images, 
+                              widget: list,
+                              fields: [
+                                { label: Title, name: title, widget: string },
+                                { label: Image, name: image, widget: image },
+                              ]
+                            },
+                          ]
+                        },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Construction Tab,
+              name: construction,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Right Image, name: rightImage, widget: image },
+                  { label: Top, name: top, widget: list },
+                  { label: Middle, name: middle, widget: list },
+                  {
+                    label: Left Image,
+                    name: leftImage,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Title, name: title, widget: string },
+                      ],
+                  },
+                  { label: Bottom, name: bottom, widget: list },
+                ],
+            }
+          - {
+              label: Colors Tab,
+              name: colors,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  {
+                    label: Items,
+                    name: items,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Title, name: title, widget: string },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Hardware Tab,
+              name: hardware,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  {
+                    label: Top,
+                    name: top,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        {
+                          label: Items,
+                          name: items,
+                          widget: list,
+                          fields:
+                            [
+                              { label: Image, name: image, widget: image },
+                              { label: Title, name: title, widget: string },
+                            ],
+                        },
+                      ],
+                  },
+                  {
+                    label: Main,
+                    name: main,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        {
+                          label: Items,
+                          name: items,
+                          widget: list,
+                          fields:
+                            [
+                              { label: Image, name: image, widget: image },
+                              { label: Title, name: title, widget: string },
+                            ],
+                        },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Related Products,
+              name: main,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  {
+                    label: Items,
+                    name: items,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Title, name: title, widget: string },
+                      ],
+                  },
+                ],
+            },
