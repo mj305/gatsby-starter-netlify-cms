@@ -447,11 +447,12 @@ collections:
               fields:
                 [
                   { label: Type, name: type, widget: select, options: [ text, image] },
-                  { label: Image, name: image, widget: image },
+                  { label: Image, name: image, widget: image, required: false },
                   {
                     label: Items,
                     name: items,
                     widget: list,
+                    required: false,
                     fields:
                       [
                         { label: Title, name: title, widget: string },
