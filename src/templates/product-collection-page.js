@@ -107,7 +107,7 @@ export const CollectionPageTemplate = ({
                       <img src={item.childImageSharp.fluid.src} alt="" />
                     ))
                   }
-                  <div className="iframe"><iframe title="Collection overview video" src="https://player.vimeo.com/video/31108986" frameborder="0" allowfullscreen></iframe></div>
+                  <div className="iframe"><iframe title="Collection overview video" src="https://player.vimeo.com/video/31108986" frameBorder="0" allowfullscreen></iframe></div>
                   <div className="bottom">
                     <img className="alignLeft" src={descriptionTab.bottom.image.childImageSharp.fluid.src} alt="" />
                     <p className="is-size-5">{descriptionTab.bottom.title}</p>

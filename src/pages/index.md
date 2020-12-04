@@ -27,7 +27,7 @@ intro:
     - image: /img/coachman.png
       text: >
         COACHMAN® Collection
-      link: /products/coatchman/
+      link: /products/coachman/
     - image: /img/canyonRidgeModern.png
       text: >
         CANYON RIDGE® Collection MODERN Series

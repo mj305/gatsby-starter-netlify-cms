@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Jack8500wPageTemplate } from '../../templates/product-jack-page'
+import { JackPageTemplate } from '../../templates/product-jack-page'
 
 const Jack8500wPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
 
   if (data) {
     return (
-      <Jack8500wPageTemplate
+      <JackPageTemplate
         image={getAsset(data.image)}
         title={data.title}
         text={data.text}
