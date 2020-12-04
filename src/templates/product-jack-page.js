@@ -4,9 +4,8 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Liner from '../components/Liner'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import jackSVG from '../../static/img/jack.svg'
-import Img from 'gatsby-image'
-
 
 import "../styles/index.sass"
 
@@ -33,7 +32,7 @@ export const JackPageTemplate = ({
         <div className="container">
           <div className="columns is-multiline">
             <div className="column is-6">
-              <Img fluid={ image ? image.childImageSharp.fluid : null} alt="" />
+              <PreviewCompatibleImage imageInfo={image} alt="" />
             </div>
             <div className="column is-6">
               <div className="hero-title">
@@ -83,7 +82,7 @@ export const JackPageTemplate = ({
                     </div>
                   )) 
                 } else {
-                  return <div className="item-image" ><Img fluid={ intro.image ? intro.image.childImageSharp.fluid : null} alt="" /></div>
+                  return <div className="item-image" ><PreviewCompatibleImage imageInfo={intro.image}/></div>
                 }
               })
             }
@@ -104,7 +103,7 @@ export const JackPageTemplate = ({
                     </div>
                   )) 
                 } else {
-                  return <div className="item-image" ><Img fluid={ intro.image ? intro.image.childImageSharp.fluid : null} alt="" /></div>
+                  return <div className="item-image" ><PreviewCompatibleImage imageInfo={ intro.image} /></div>
                 }
               })
             }
@@ -174,7 +173,7 @@ export const JackPageTemplate = ({
             {
               include.items.map(item => (
                 <div className="column is-3">
-                  <Img fluid={ item.image ? item.image.childImageSharp.fluid : null} alt=""  />
+                  <PreviewCompatibleImage imageInfo={ item.image}/>
                   <p className="is-size-5">{item.title}</p>
                   <p>{item.text}</p>
                 </div>
