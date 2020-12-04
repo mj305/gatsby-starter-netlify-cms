@@ -226,3 +226,53 @@ collections:
                 },
               ],
             }
+      - file: "src/pages/gate-repair/index.md"
+        label: "Gate Repair Page"
+        name: "gate-repair"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "gate-repair-page",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: Image, name: image, widget: image }
+          - {
+              label: Content, 
+              name: content, 
+              widget: list,
+              fields: [
+                { label: Title, name: title, widget: string },
+                { label: Description, name: description, widget: text },
+                { label: Image, name: image, widget: list },
+                { label: Image Position, name: position, widget: string },
+              ],
+            }
+          - { 
+              label: Swing,
+              name: swing, 
+              widget: object,
+              fields: [
+                { label: Title, name: title, widget: string },
+                { label: SubTitle, name: subTitle, widget: text },
+                { 
+                  label: Blurbs, 
+                  name: blurbs, 
+                  widget: list,
+                  fields: [
+                    { label: Text, name: text, widget: string },
+                    { label: Image, name: image, widget: image },
+                  ]
+                }
+              ],
+            },
+          - { 
+              label: Bottom,
+              name: bottom, 
+              widget: object,
+              fields: [
+                { label: Text, name: text, widget: string },
+                { label: Botton, name: button, widget: string },
+              ],
+            },
