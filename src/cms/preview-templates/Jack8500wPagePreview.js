@@ -4,7 +4,7 @@ import { JackPageTemplate } from '../../templates/product-jack-page'
 
 const Jack8500wPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
-
+  console.log("data.image", data.image)
   if (data) {
     return (
       <JackPageTemplate
