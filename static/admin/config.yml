@@ -350,7 +350,7 @@ collections:
               name: images, 
               widget: object,
               fields: [
-                { label: Left, name: left, widget: list, fields: [ widget: image ] },
+                { label: Left, name: left, widget: list },
                 { label: Right, name: right, widget: list },
               ],
             }
