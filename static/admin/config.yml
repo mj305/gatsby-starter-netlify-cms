@@ -440,49 +440,49 @@ collections:
               widget: list,
             }
           - { label: Image, name: image, widget: image }
-          - {
-              label: Left Intro,
-              name: leftIntro,
-              widget: list,
-              fields:
-                [
-                  { label: Type, name: type, widget: select, options: [ text, image] },
-                  { label: Image, name: image, widget: image, required: false },
-                  {
-                    label: Items,
-                    name: items,
-                    widget: list,
-                    required: false,
-                    fields:
-                      [
-                        { label: Title, name: title, widget: string },
-                        { label: SubTitle, name: subtitle, widget: string },
-                        { label: Text, name: text, widget: text },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: Roght Intro,
-              name: rightIntro,
-              widget: list,
-              fields:
-                [
-                  { label: Type, name: type, widget: select, options: [ text, image] },
-                  { label: Image, name: image, widget: image },
-                  {
-                    label: Items,
-                    name: items,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Title, name: title, widget: string },
-                        { label: SubTitle, name: subtitle, widget: string },
-                        { label: Text, name: text, widget: text },
-                      ],
-                  },
-                ],
-            }
+          # - {
+          #     label: Left Intro,
+          #     name: leftIntro,
+          #     widget: list,
+          #     fields:
+          #       [
+          #         { label: Type, name: type, widget: select, options: [ text, image] },
+          #         { label: Image, name: image, widget: image, required: false },
+          #         {
+          #           label: Items,
+          #           name: items,
+          #           widget: list,
+          #           required: false,
+          #           fields:
+          #             [
+          #               { label: Title, name: title, widget: string },
+          #               { label: SubTitle, name: subtitle, widget: string },
+          #               { label: Text, name: text, widget: text },
+          #             ],
+          #         },
+          #       ],
+          #   }
+          # - {
+          #     label: Roght Intro,
+          #     name: rightIntro,
+          #     widget: list,
+          #     fields:
+          #       [
+          #         { label: Type, name: type, widget: select, options: [ text, image] },
+          #         { label: Image, name: image, widget: image },
+          #         {
+          #           label: Items,
+          #           name: items,
+          #           widget: list,
+          #           fields:
+          #             [
+          #               { label: Title, name: title, widget: string },
+          #               { label: SubTitle, name: subtitle, widget: string },
+          #               { label: Text, name: text, widget: text },
+          #             ],
+          #         },
+          #       ],
+          #   }
           - {
               label: Video,
               name: video,
