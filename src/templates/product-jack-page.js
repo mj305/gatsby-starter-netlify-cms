@@ -33,7 +33,7 @@ export const JackPageTemplate = ({
         <div className="container">
           <div className="columns is-multiline">
             <div className="column is-6">
-              <Img fluid={image.childImageSharp.fluid} alt="" />
+              <Img fluid={ image ? image.childImageSharp.fluid : null} alt="" />
             </div>
             <div className="column is-6">
               <div className="hero-title">
@@ -83,7 +83,7 @@ export const JackPageTemplate = ({
                     </div>
                   )) 
                 } else {
-                  return <div className="item-image" ><Img fluid={intro.image.childImageSharp.fluid} alt="" /></div>
+                  return <div className="item-image" ><Img fluid={ intro.image ? intro.image.childImageSharp.fluid : null} alt="" /></div>
                 }
               })
             }
@@ -104,7 +104,7 @@ export const JackPageTemplate = ({
                     </div>
                   )) 
                 } else {
-                  return <div className="item-image" ><Img fluid={intro.image.childImageSharp.fluid} alt="" /></div>
+                  return <div className="item-image" ><Img fluid={ intro.image ? intro.image.childImageSharp.fluid : null} alt="" /></div>
                 }
               })
             }
@@ -174,7 +174,7 @@ export const JackPageTemplate = ({
             {
               include.items.map(item => (
                 <div className="column is-3">
-                  <Img fluid={item.image.childImageSharp.fluid} alt=""  />
+                  <Img fluid={ item.image ? item.image.childImageSharp.fluid : null} alt=""  />
                   <p className="is-size-5">{item.title}</p>
                   <p>{item.text}</p>
                 </div>

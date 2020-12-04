@@ -36,12 +36,12 @@ export const CollectionPageTemplate = ({
         <div className="container">
           <div className="columns is-multiline">
             <div className="column is-5 is-offset-1">
-              <Img fluid={image.childImageSharp.fluid} alt="" />
+              <Img fluid={ image ? image.childImageSharp.fluid : null} alt="" />
               <div className="columns is-multiline thumbnails">
                 {
                   thumb.map(item => (
                     <div className="column is-3">
-                      <Img fluid={item.childImageSharp.fluid} alt="" />
+                      <Img fluid={item ? item.childImageSharp.fluid : null} alt="" />
                     </div>
                   ))
                 }
@@ -57,7 +57,7 @@ export const CollectionPageTemplate = ({
                 <div className="icons">
                   {
                     icons.map(item => (
-                      <img src={item.childImageSharp.fluid.src} alt="" />
+                      <img src={item ? item.childImageSharp.fluid.src : null} alt="" />
                     ))
                   }
                 </div>              
@@ -87,7 +87,7 @@ export const CollectionPageTemplate = ({
                   <p>
                     {descriptionTab.text}
                   </p>
-                  <img className="alignRight" src={descriptionTab.image.childImageSharp.fluid.src} alt="" />
+                  <img className="alignRight" src={descriptionTab.image ? descriptionTab.image.childImageSharp.fluid.src : null} alt="" />
                   {
                     descriptionTab.description.map(item => (
                       <div className="block">
@@ -104,12 +104,12 @@ export const CollectionPageTemplate = ({
                   }
                   {
                     descriptionTab.images.map(item => (
-                      <img src={item.childImageSharp.fluid.src} alt="" />
+                      <img src={item ? item.childImageSharp.fluid.src : null} alt="" />
                     ))
                   }
                   <div className="iframe"><iframe title="Collection overview video" src="https://player.vimeo.com/video/31108986" frameBorder="0" allowfullscreen></iframe></div>
                   <div className="bottom">
-                    <img className="alignLeft" src={descriptionTab.bottom.image.childImageSharp.fluid.src} alt="" />
+                    <img className="alignLeft" src={descriptionTab.bottom.image ? descriptionTab.bottom.image.childImageSharp.fluid.src : null} alt="" />
                     <p className="is-size-5">{descriptionTab.bottom.title}</p>
                     <p>{descriptionTab.bottom.text}</p>
                   </div>                    
@@ -118,7 +118,7 @@ export const CollectionPageTemplate = ({
                   <p className="is-size-4">
                     {options.title}
                   </p>
-                  <img src={options.image.childImageSharp.fluid.src} alt="" />
+                  <img src={options.image ? options.image.childImageSharp.fluid.src : null} alt="" />
                   {
                     options.designs.map(design => (
                       <div>
@@ -136,7 +136,7 @@ export const CollectionPageTemplate = ({
                                   item.images.map(door => (
                                     <div className="column is-4">
                                       <div>
-                                        <img src={door.image.childImageSharp.fluid.src} alt="" />
+                                        <img src={door.image ? door.image.childImageSharp.fluid.src : null} alt="" />
                                         <p>{door.title}</p>
                                       </div>                                      
                                     </div>                                    
@@ -154,7 +154,7 @@ export const CollectionPageTemplate = ({
                     <p className="is-size-4">
                       {construction.title}
                     </p>
-                    <img className="alignRight" src={construction.rightImage.childImageSharp.fluid.src} alt="" />
+                    <img className="alignRight" src={construction.rightImage ? construction.rightImage.childImageSharp.fluid.src : null} alt="" />
                       <ol>
                         {
                           construction.top.map(list => (
@@ -169,7 +169,7 @@ export const CollectionPageTemplate = ({
                           ))
                         }
                       </ul>
-                      <img src={construction.leftImage.image.childImageSharp.fluid.src} alt="" />
+                      <img src={construction.leftImage ? construction.leftImage.image.childImageSharp.fluid.src : null} alt="" />
                       <p>{construction.leftImage.title}</p>
                       <ul>
                         {
@@ -186,7 +186,7 @@ export const CollectionPageTemplate = ({
                     {
                       colors.items.map(item => (
                         <div>
-                          <img src={item.image.childImageSharp.fluid.src} alt="" />
+                          <img src={item.image ? item.image.childImageSharp.fluid.src : null} alt="" />
                           <p>{item.title}</p>
                         </div>
                       ))
@@ -215,7 +215,7 @@ export const CollectionPageTemplate = ({
                             design.items.map(item => (
                               <div className="column is-3">
                                 <div>
-                                  <img src={item.image ? item.image.childImageSharp.fluid.src : "null"} alt="" />
+                                  <img src={item.image ? item.image.childImageSharp.fluid.src : null} alt="" />
 
                                   <p>{item.title}</p>
                                 </div>                                      
@@ -240,7 +240,7 @@ export const CollectionPageTemplate = ({
               {
                 related.items.map(item => (
                   <div className="column is-4">
-                    <Img fluid={item.image ? item.image.childImageSharp.fluid : "null"} alt=""  />
+                    <Img fluid={item.image ? item.image.childImageSharp.fluid : null} alt=""  />
                     <p className="is-size-5">{item.title}</p>
                   </div>
                 ))
