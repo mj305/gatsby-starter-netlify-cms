@@ -422,113 +422,107 @@ collections:
                 { label: Number, name: boxContent, widget: string },
               ],
             }
-      - file: "src/pages/products/index.md"
-        label: "Products Page"
-        name: "products"
+      - file: "src/pages/products/jack-8500w.md"
+        label: "Jack Shaft Openers 8500W Page"
+        name: "jack-8500w"
         fields:
           - {
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "product-page",
+              default: "product-jack-page",
             }
           - { label: Title, name: title, widget: string }
+          - { label: Text, name: text, widget: string }
+          - { 
+              label: List, 
+              name: list, 
+              widget: list,
+            }
           - { label: Image, name: image, widget: image }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Description, name: description, widget: string }
           - {
-              label: Intro,
-              name: intro,
-              widget: object,
+              label: Left Intro,
+              name: leftIntro,
+              widget: list,
               fields:
                 [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
+                  { label: Type, name: type, widget: select, options: [ text, image] },
+                  { label: Image, name: image, widget: image },
                   {
-                    label: Blurbs,
-                    name: blurbs,
+                    label: Items,
+                    name: items,
                     widget: list,
                     fields:
                       [
-                        { label: Image, name: image, widget: image },
+                        { label: Title, name: title, widget: string },
+                        { label: SubTitle, name: subtitle, widget: string },
                         { label: Text, name: text, widget: text },
                       ],
                   },
                 ],
             }
           - {
-              label: Main,
-              name: main,
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
-                  {
-                    label: Image1,
-                    name: image1,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                  {
-                    label: Image2,
-                    name: image2,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                  {
-                    label: Image3,
-                    name: image3,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: Testimonials,
-              name: testimonials,
+              label: Roght Intro,
+              name: rightIntro,
               widget: list,
               fields:
                 [
-                  { label: Quote, name: quote, widget: string },
-                  { label: Author, name: author, widget: string },
-                ],
-            }
-          - { label: Full_image, name: full_image, widget: image }
-          - {
-              label: Pricing,
-              name: pricing,
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: string },
+                  { label: Type, name: type, widget: select, options: [ text, image] },
+                  { label: Image, name: image, widget: image },
                   {
-                    label: Plans,
-                    name: plans,
+                    label: Items,
+                    name: items,
                     widget: list,
                     fields:
                       [
-                        { label: Plan, name: plan, widget: string },
-                        { label: Price, name: price, widget: string },
-                        {
-                          label: Description,
-                          name: description,
-                          widget: string,
-                        },
-                        { label: Items, name: items, widget: list },
+                        { label: Title, name: title, widget: string },
+                        { label: SubTitle, name: subtitle, widget: string },
+                        { label: Text, name: text, widget: text },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Video,
+              name: video,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Link, name: link, widget: string },
+                ],
+            }
+          - {
+              label: Specifications,
+              name: spec,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  {
+                    label: Data,
+                    name: data,
+                    widget: list,
+                  },
+                ],
+            }
+          - { label: Warranty, name: warranty, widget: list }
+          - {
+              label: Included,
+              name: include,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  {
+                    label: Items,
+                    name: items,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Title, name: title, widget: string },
+                        { label: Text, name: text, widget: string },
                       ],
                   },
                 ],
