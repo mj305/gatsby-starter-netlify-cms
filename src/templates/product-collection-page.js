@@ -58,6 +58,7 @@ export const CollectionPageTemplate = ({
                 <div className="icons">
                   {
                     icons.map(item => (
+                      <></>
                       // <img src={ item ? item.childImageSharp.fluid.src : null} alt="" />
                     ))
                   }
