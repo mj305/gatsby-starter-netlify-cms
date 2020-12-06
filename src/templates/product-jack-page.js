@@ -32,7 +32,7 @@ export const JackPageTemplate = ({
         <div className="container">
           <div className="columns is-multiline">
             <div className="column is-6">
-              <PreviewCompatibleImage imageInfo={image} alt="" />
+              <PreviewCompatibleImage imageInfo={image}/>
             </div>
             <div className="column is-6">
               <div className="hero-title">

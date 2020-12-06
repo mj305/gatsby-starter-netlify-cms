@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import Img from 'gatsby-image'
 
 
@@ -36,12 +37,12 @@ export const CollectionPageTemplate = ({
         <div className="container">
           <div className="columns is-multiline">
             <div className="column is-5 is-offset-1">
-              <Img fluid={ image ? image.childImageSharp.fluid : null} alt="" />
+              <PreviewCompatibleImage imageInfo={image}/>
               <div className="columns is-multiline thumbnails">
                 {
                   thumb.map(item => (
                     <div className="column is-3">
-                      <Img fluid={item ? item.childImageSharp.fluid : null} alt="" />
+                      <PreviewCompatibleImage imageInfo={item}/>
                     </div>
                   ))
                 }
@@ -57,7 +58,7 @@ export const CollectionPageTemplate = ({
                 <div className="icons">
                   {
                     icons.map(item => (
-                      <img src={item ? item.childImageSharp.fluid.src : null} alt="" />
+                      <PreviewCompatibleImage imageInfo={item}/>
                     ))
                   }
                 </div>              
@@ -87,7 +88,7 @@ export const CollectionPageTemplate = ({
                   <p>
                     {descriptionTab.text}
                   </p>
-                  <img className="alignRight" src={descriptionTab.image ? descriptionTab.image.childImageSharp.fluid.src : null} alt="" />
+                  <PreviewCompatibleImage className="alignRight" src={descriptionTab.image} />
                   {
                     descriptionTab.description.map(item => (
                       <div className="block">
@@ -104,12 +105,12 @@ export const CollectionPageTemplate = ({
                   }
                   {
                     descriptionTab.images.map(item => (
-                      <img src={item ? item.childImageSharp.fluid.src : null} alt="" />
+                      <PreviewCompatibleImage imageInfo={item}/>
                     ))
                   }
                   <div className="iframe"><iframe title="Collection overview video" src="https://player.vimeo.com/video/31108986" frameBorder="0" allowfullscreen></iframe></div>
                   <div className="bottom">
-                    <img className="alignLeft" src={descriptionTab.bottom.image ? descriptionTab.bottom.image.childImageSharp.fluid.src : null} alt="" />
+                    <PreviewCompatibleImage className="alignLeft" imageInfo={descriptionTab.bottom.image}/>
                     <p className="is-size-5">{descriptionTab.bottom.title}</p>
                     <p>{descriptionTab.bottom.text}</p>
                   </div>                    
@@ -118,7 +119,7 @@ export const CollectionPageTemplate = ({
                   <p className="is-size-4">
                     {options.title}
                   </p>
-                  <img src={options.image ? options.image.childImageSharp.fluid.src : null} alt="" />
+                  <PreviewCompatibleImage imageInfo={options.image}/>
                   {
                     options.designs.map(design => (
                       <div>
@@ -136,7 +137,7 @@ export const CollectionPageTemplate = ({
                                   item.images.map(door => (
                                     <div className="column is-4">
                                       <div>
-                                        <img src={door.image ? door.image.childImageSharp.fluid.src : null} alt="" />
+                                        <PreviewCompatibleImage imageInfo={door.image } />
                                         <p>{door.title}</p>
                                       </div>                                      
                                     </div>                                    
@@ -154,7 +155,7 @@ export const CollectionPageTemplate = ({
                     <p className="is-size-4">
                       {construction.title}
                     </p>
-                    <img className="alignRight" src={construction.rightImage ? construction.rightImage.childImageSharp.fluid.src : null} alt="" />
+                    <PreviewCompatibleImage className="alignRight" imageInfo={construction.rightImage} />
                       <ol>
                         {
                           construction.top.map(list => (
@@ -169,7 +170,7 @@ export const CollectionPageTemplate = ({
                           ))
                         }
                       </ul>
-                      <img src={construction.leftImage ? construction.leftImage.image.childImageSharp.fluid.src : null} alt="" />
+                      <PreviewCompatibleImage imageInfo={construction.leftImage} />
                       <p>{construction.leftImage.title}</p>
                       <ul>
                         {
@@ -186,7 +187,7 @@ export const CollectionPageTemplate = ({
                     {
                       colors.items.map(item => (
                         <div>
-                          <img src={item.image ? item.image.childImageSharp.fluid.src : null} alt="" />
+                          <PreviewCompatibleImage imageInfo={item.image} />
                           <p>{item.title}</p>
                         </div>
                       ))
@@ -201,7 +202,7 @@ export const CollectionPageTemplate = ({
                         hardware.top.items.map(item => (
                           <div className="column is-3">
                             <div>
-                              <img src={item.image ? item.image.childImageSharp.fluid.src : "null"} alt="" />
+                              <PreviewCompatibleImage imageInfo={item.image} />
                               <p>{item.title}</p>
                             </div>                                      
                           </div>                                    
@@ -215,7 +216,7 @@ export const CollectionPageTemplate = ({
                             design.items.map(item => (
                               <div className="column is-3">
                                 <div>
-                                  <img src={item.image ? item.image.childImageSharp.fluid.src : null} alt="" />
+                                  <PreviewCompatibleImage imageInfo={item.image} />
 
                                   <p>{item.title}</p>
                                 </div>                                      
@@ -240,7 +241,7 @@ export const CollectionPageTemplate = ({
               {
                 related.items.map(item => (
                   <div className="column is-4">
-                    <Img fluid={item.image ? item.image.childImageSharp.fluid : null} alt=""  />
+                    <PreviewCompatibleImage imageInfo={item.image} />
                     <p className="is-size-5">{item.title}</p>
                   </div>
                 ))

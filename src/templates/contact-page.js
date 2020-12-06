@@ -44,7 +44,7 @@ export const ContactPageTemplate = ({
             </h1>
           </div>
           <div className="columns is-multiline">            
-            <div className="column is-10 is-offset-1 has-text-centered info">
+            <div className="column is-12 has-text-centered info">
               <div className="heading">
                 <h3 className="subtitle has-text-weight-bold" >{heading}</h3>
                 <p className="subtitle">{subHeading}</p>
