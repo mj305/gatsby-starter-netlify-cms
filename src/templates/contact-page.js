@@ -4,7 +4,8 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Contact from '../components/Contact'
-import whiteDivder from '../../static/img/white-divider.svg'
+import TextBlock from '../components/TextBlock'
+import darkDivider from '../../static/img/dark-divider.svg'
 
 import "../styles/index.sass"
 
@@ -16,6 +17,7 @@ export const ContactPageTemplate = ({
   subHeading,
   boxTitle,
   boxContent,
+  content,
   left,
   right,
   reason,
@@ -41,13 +43,9 @@ export const ContactPageTemplate = ({
               {subTitle}
             </h1>
           </div>
-          <div className="columns is-multiline">
-            <div className="column is-5 is-offset-1">
-              <iframe title="contact" height="800" width="1200" src="https://app.servicefusion.com/aaagarage"></iframe>
-            </div>
-            <div className="column is-5 info">
+          <div className="columns is-multiline">            
+            <div className="column is-10 is-offset-1 has-text-centered info">
               <div className="heading">
-                <div className="button-wrapper"><a href="/" className="button is-large is-size-3">Quick Quote</a></div>
                 <h3 className="subtitle has-text-weight-bold" >{heading}</h3>
                 <p className="subtitle">{subHeading}</p>
               </div>
@@ -68,14 +66,31 @@ export const ContactPageTemplate = ({
                 <p className="subtitle">Office: 8AM – 5PM  M-F</p>
               </div>
             </div>
+            <div className="column is-10 is-offset-1">
+              <iframe title="contact" height="800" width="1200" src="https://app.servicefusion.com/aaagarage"></iframe>
+            </div>
           </div>          
         </div>
       </div>
       <div className="animation-divider"
         style={{
-          backgroundImage: `url(${whiteDivder})`,
+          backgroundImage: `url(${darkDivider})`,
         }}
       ></div>
+    </section>
+
+    <section className="section request-section">
+      <div className="container">
+        <div className="columns is-multiline">
+          <div className="column is-6 is-offset-1">
+            <TextBlock content={content} icon={true} />
+          </div>
+          <div className="column is-4 info">
+            <p className="is-size-3 is-italic has-text-centered">Request Quick Quote</p>
+            <iframe title="form" height="80%" width="100%" src="https://app.servicemonster.net/WebForms/BasicForm.aspx?Token=mmRM3KSBX4lWBciq9vVucX4hSANyZJ7d%2BXqm8LQuguKadcaNGgAd3A%3d%3d&Origin=Basic%20Form"></iframe>
+          </div>
+        </div>   
+      </div>
     </section>
 
     <section className="section text-section">
@@ -169,6 +184,7 @@ ContactPageTemplate.propTypes = {
   subHeading: PropTypes.string,
   boxTitle: PropTypes.string,
   boxContent: PropTypes.string,
+  content: PropTypes.array,
   left: PropTypes.shape({
     title: PropTypes.string,
     description: PropTypes.string
@@ -201,6 +217,7 @@ const ContactPage = ({ data }) => {
         subHeading={frontmatter.subHeading}
         boxTitle={frontmatter.boxTitle}
         boxContent={frontmatter.boxContent}
+        content={frontmatter.content}
         left={frontmatter.left}
         right={frontmatter.right}
         reason={frontmatter.reason}
@@ -238,6 +255,11 @@ export const pageQuery = graphql`
         subHeading
         boxTitle
         boxContent
+        content {
+          title
+          boldText
+          description
+        }
         left {
           title
           description

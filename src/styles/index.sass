@@ -80,8 +80,11 @@
       box-shadow: rgba(0, 0, 0, 0.035) 0px 2.8px 2.2px, rgba(0, 0, 0, 0.047) 0px 6.7px 5.3px, rgba(0, 0, 0, 0.06) 0px 12.5px 10px, rgba(0, 0, 0, 0.07) 0px 22.3px 17.9px, rgba(0, 0, 0, 0.086) 0px 41.8px 33.4px, rgba(0, 0, 0, 0.12) 0px 100px 80px
       .card-header-title
         color: #035aa6
+        padding-left: 0.5rem
       .card-content
         color: grey
+      .media .media-left
+        margin-right: 0
 
 .doors-section
   margin-top: 5rem
@@ -103,17 +106,6 @@
   .columns
     article
       height: 100%
-//commercial page
-.commercial
-  .request-section
-    background-color: #d3d3d3
-    iframe
-      max-width: 100%
-      min-height: 50vh
-    .info
-      p
-        color: #008500
-        margin-bottom: 1rem
 
 //Repair Page
 .repair-swing
@@ -153,6 +145,15 @@
           margin-top: 1rem
       .box
         width: 50%
+  .request-section
+    background-color: #d3d3d3
+    iframe
+      max-width: 100%
+      min-height: 50vh
+    .info
+      p
+        color: #008500
+        margin-bottom: 1rem
   .text-section
     margin-top: 5rem
     .text-content
@@ -275,6 +276,9 @@
         top: 0
         height: 100%
         width: 100%
+  .spec table
+    width: 100%
+    table-layout: fixed
   .warranty-section
     ul
       list-style: unset
@@ -347,6 +351,10 @@
   .wedo-section
     .box
       width: 40%
+  .reason-section
+    .row
+      .card .card-header-title
+        padding-left: 0.2rem
 +mobile
   .top-section
     .box
@@ -369,6 +377,9 @@
           width: 100%
           .button
             width: 100%
+  .jack
+    .spec
+      padding: 0
   .collection
     .top-section
       .thumbnails 

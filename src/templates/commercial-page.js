@@ -5,7 +5,6 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
 import Contact from '../components/Contact'
-import TextBlock from '../components/TextBlock'
 import Openers from '../components/Openers'
 
 import "../styles/index.sass"
@@ -16,26 +15,11 @@ export const CommercialPageTemplate = ({
   subTitle,
   boxTitle,
   boxContent,
-  content,
   products,
 }) => (
   <div className="commercial">
-    <Hero image={image} title={title} subTitle={subTitle} boxTitle={boxTitle} boxContent={boxContent} dark={true} />    
+    <Hero image={image} title={title} subTitle={subTitle} boxTitle={boxTitle} boxContent={boxContent} />    
     
-    <section className="section request-section">
-      <div className="container">
-        <div className="columns is-multiline">
-          <div className="column is-6 is-offset-1">
-            <TextBlock content={content} icon={true} />
-          </div>
-          <div className="column is-4 info">
-            <p className="is-size-3 is-italic has-text-centered">Request Quick Quote</p>
-            <iframe title="form" height="80%" width="100%" src="https://app.servicemonster.net/WebForms/BasicForm.aspx?Token=mmRM3KSBX4lWBciq9vVucX4hSANyZJ7d%2BXqm8LQuguKadcaNGgAd3A%3d%3d&Origin=Basic%20Form"></iframe>
-          </div>
-        </div>   
-      </div>
-    </section>
-
     <section className="section is-fullheight">        
       <div className="container">
         <div className="column is-12">
@@ -64,7 +48,6 @@ CommercialPageTemplate.propTypes = {
   subTitle: PropTypes.string,
   boxTitle: PropTypes.string,
   boxContent: PropTypes.string,
-  content: PropTypes.array,
   products: PropTypes.shape({
     title: string,
     subTitle: string,
@@ -92,7 +75,6 @@ const CommercialPage = ({ data }) => {
         subTitle={frontmatter.subTitle}
         boxTitle={frontmatter.boxTitle}
         boxContent={frontmatter.boxContent}
-        content={frontmatter.content}
         products={frontmatter.products}
       />
     </Layout>
@@ -124,11 +106,6 @@ export const pageQuery = graphql`
         subTitle
         boxTitle
         boxContent
-        content {
-          title
-          boldText
-          description
-        }
         products {
           title
           subTitle

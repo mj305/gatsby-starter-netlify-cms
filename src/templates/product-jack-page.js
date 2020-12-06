@@ -50,7 +50,7 @@ export const JackPageTemplate = ({
                     ))
                   }
                 </ul>
-                <a className="button is-medium" href="/#">VIEW MORE</a>
+                <a className="button is-medium" href="/contact">Book Now</a>
               </div>
             </div>
           </div>          
@@ -125,13 +125,13 @@ export const JackPageTemplate = ({
       </div>
     </section>
 
-    <section className="section">
+    <section className="section spec">
       <div className="container">
         <div className="column is-10 is-offset-1">
           <p className="is-size-5 has-text-centered custom-title">
             {spec.title}
           </p>
-          <table className="table is-fullwidth is-bordered">
+          <table className="table is-bordered">
             <tbody>
               {
                 spec.data.map(item => (

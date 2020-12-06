@@ -8,6 +8,19 @@ heading: AAA Garage Doors Inc.
 subHeading: 19200 SW 106th Ave. Unit 4 Miami ,FL , 33157
 boxTitle: Call For Consultation
 boxContent: (305) 702-0113
+content:
+    -   title: Miami-Dade Commercial Garage Doors & Overhead Doors
+        boldText: >
+            Our solutions for commercial properties are customized to meet your needs. Commercial garage door and steel gate openers operate the largest and most diverse sized equipment with high frequency.
+        description: >
+            Our veteran technicians lead the field in experience, and efficiency and always choose the highest quality solutions for each location. Nothing is more important than the safety & reliability of the equipment we service.</br></br>
+            We Service Sectional and Rolling storage doors, service doors, service fire doors, rolling grilles, light-duty and heavy-duty sheet doors, certified windload sheet doors, and insulated and non-insulated sectional doors.
+    -   title: Broward Commercial Garage Doors & Overhead Doors
+        description: >
+            Clopay commercial Garage Door  are constructed using the finest raw materials, produced by the hands of skilled craftsmen, customized with computer-aided precision, and delivered both on time and with care. Our entire line of Industrial overhead doors, such as our line of insulated garage doors, was specially engineered for extra durability to afford years of dependable operation — even in the toughest industrial environments.</br></br>
+            Regardless of your application, AAA GGarage door’s can recommend, supply and professionally install a door that meets your needs at a price that fits your budget.</br></br>
+            We’ve listed the most common doors we sell below.</br></br>
+            We always provide free estimates and on-site consultation to make completing your garage door project as quick and simple as possible.
 left:
     title: How Do You Know If You Need a Garage Door Repair?
     description: >
