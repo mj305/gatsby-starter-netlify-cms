@@ -58,7 +58,7 @@ export const CollectionPageTemplate = ({
                 <div className="icons">
                   {
                     icons.map(item => (
-                      <PreviewCompatibleImage imageInfo={item}/>
+                      <img src={ item ? item.childImageSharp.fluid.src : null} alt="" />
                     ))
                   }
                 </div>              
@@ -88,7 +88,7 @@ export const CollectionPageTemplate = ({
                   <p>
                     {descriptionTab.text}
                   </p>
-                  <PreviewCompatibleImage className="alignRight" src={descriptionTab.image} />
+                  <PreviewCompatibleImage className="alignRight" imageInfo={descriptionTab.image} />
                   {
                     descriptionTab.description.map(item => (
                       <div className="block">
