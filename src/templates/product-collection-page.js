@@ -119,7 +119,7 @@ export const CollectionPageTemplate = ({
                   <p className="is-size-4">
                     {options.title}
                   </p>
-                  <PreviewCompatibleImage imageInfo={options.ima pure={true}ge}/>
+                  <PreviewCompatibleImage imageInfo={options.image} pure={true} />
                   {
                     options.designs.map(design => (
                       <div>
@@ -137,7 +137,7 @@ export const CollectionPageTemplate = ({
                                   item.images.map(door => (
                                     <div className="column is-4">
                                       <div>
-                                        <PreviewCompatibleImage imageInfo={door.image  pure={true}} />
+                                        <PreviewCompatibleImage imageInfo={door.image } pure={true} />
                                         <p>{door.title}</p>
                                       </div>                                      
                                     </div>                                    
@@ -155,7 +155,7 @@ export const CollectionPageTemplate = ({
                     <p className="is-size-4">
                       {construction.title}
                     </p>
-                    <PreviewCompatibleImage className="alignRight" pure={true} imageInfo={construction.rightImage} />
+                    <PreviewCompatibleImage className="alignRight" imageInfo={construction.rightImage} pure={true} />
                       <ol>
                         {
                           construction.top.map(list => (
@@ -170,7 +170,7 @@ export const CollectionPageTemplate = ({
                           ))
                         }
                       </ul>
-                      <PreviewCompatibleImage imageInfo={constructio pure={true}n.leftImage} />
+                      <PreviewCompatibleImage imageInfo={construction.leftImage} pure={true} />
                       <p>{construction.leftImage.title}</p>
                       <ul>
                         {
