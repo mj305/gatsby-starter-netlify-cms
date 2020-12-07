@@ -20,10 +20,9 @@ const PreviewCompatibleImage = ({ imageInfo, border, pure }) => {
     }
 
     if (!!image && typeof image === 'string')
-      return <img style={imageStyle} src={image} alt={alt} />
-
-    return null
+      return <img style={imageStyle} src={image} alt={alt} />    
   }
+  return null
 }
 
 PreviewCompatibleImage.propTypes = {
@@ -33,6 +32,8 @@ PreviewCompatibleImage.propTypes = {
     image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]).isRequired,
     style: PropTypes.object,
   }).isRequired,
+  border: PropTypes.bool,
+  pure: PropTypes.bool
 }
 
 export default PreviewCompatibleImage
