@@ -15,9 +15,9 @@ const TextWithImage = ({ content }) => (
           </div>
         </div>
         <div className="column is-4">
-          {content.image.map((item) => (
+          {content.images.map((item) => (
             <div className="column is-10">
-              <PreviewCompatibleImage imageInfo={item} />
+              <PreviewCompatibleImage imageInfo={item.image} />
             </div>
           ))}
         </div>

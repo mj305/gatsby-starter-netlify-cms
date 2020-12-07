@@ -245,7 +245,14 @@ collections:
               fields: [
                 { label: Title, name: title, widget: string },
                 { label: Description, name: description, widget: text },
-                { label: Image, name: image, widget: list },
+                { 
+                  label: Image, 
+                  name: images, 
+                  widget: list,
+                  fields: [
+                    {lable: Image, name: image, widget: image}
+                  ]
+                },
                 { label: Image Position, name: position, widget: string },
               ],
             }
