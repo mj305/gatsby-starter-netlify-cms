@@ -86,9 +86,9 @@ export const ContactPageTemplate = ({
             <TextBlock content={content} icon={true} />
           </div>
           <div className="column is-4 info">
-            <p className="is-size-3 is-italic has-text-centered">Request Quick Quote</p>
+          {/*   <p className="is-size-3 is-italic has-text-centered">Request Quick Quote</p>
             <iframe title="form" height="80%" width="100%" src="https://app.servicemonster.net/WebForms/BasicForm.aspx?Token=mmRM3KSBX4lWBciq9vVucX4hSANyZJ7d%2BXqm8LQuguKadcaNGgAd3A%3d%3d&Origin=Basic%20Form"></iframe>
-          </div>
+           */}</div>
         </div>   
       </div>
     </section>
