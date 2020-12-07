@@ -58,8 +58,7 @@ export const CollectionPageTemplate = ({
                 <div className="icons">
                   {
                     icons.map(item => (
-                      <></>
-                      // <img src={ item ? item.childImageSharp.fluid.src : null} alt="" />
+                      <PreviewCompatibleImage imageInfo={item} pure={true} />
                     ))
                   }
                 </div>              
@@ -89,7 +88,7 @@ export const CollectionPageTemplate = ({
                   <p>
                     {descriptionTab.text}
                   </p>
-                  <PreviewCompatibleImage className="alignRight" imageInfo={descriptionTab.image} />
+                  <PreviewCompatibleImage className="alignRight" imageInfo={descriptionTab.image} pure={true} />
                   {
                     descriptionTab.description.map(item => (
                       <div className="block">
@@ -106,12 +105,12 @@ export const CollectionPageTemplate = ({
                   }
                   {
                     descriptionTab.images.map(item => (
-                      <PreviewCompatibleImage imageInfo={item}/>
+                      <PreviewCompatibleImage imageInfo={item} pure={true}/>
                     ))
                   }
                   <div className="iframe"><iframe title="Collection overview video" src="https://player.vimeo.com/video/31108986" frameBorder="0" allowfullscreen></iframe></div>
                   <div className="bottom">
-                    <PreviewCompatibleImage className="alignLeft" imageInfo={descriptionTab.bottom.image}/>
+                    <PreviewCompatibleImage className="alignLeft" imageInfo={descriptionTab.bottom.image} pure={true}/>
                     <p className="is-size-5">{descriptionTab.bottom.title}</p>
                     <p>{descriptionTab.bottom.text}</p>
                   </div>                    
@@ -120,7 +119,7 @@ export const CollectionPageTemplate = ({
                   <p className="is-size-4">
                     {options.title}
                   </p>
-                  <PreviewCompatibleImage imageInfo={options.image}/>
+                  <PreviewCompatibleImage imageInfo={options.ima pure={true}ge}/>
                   {
                     options.designs.map(design => (
                       <div>
@@ -138,7 +137,7 @@ export const CollectionPageTemplate = ({
                                   item.images.map(door => (
                                     <div className="column is-4">
                                       <div>
-                                        <PreviewCompatibleImage imageInfo={door.image } />
+                                        <PreviewCompatibleImage imageInfo={door.image  pure={true}} />
                                         <p>{door.title}</p>
                                       </div>                                      
                                     </div>                                    
@@ -156,7 +155,7 @@ export const CollectionPageTemplate = ({
                     <p className="is-size-4">
                       {construction.title}
                     </p>
-                    <PreviewCompatibleImage className="alignRight" imageInfo={construction.rightImage} />
+                    <PreviewCompatibleImage className="alignRight" pure={true} imageInfo={construction.rightImage} />
                       <ol>
                         {
                           construction.top.map(list => (
@@ -171,7 +170,7 @@ export const CollectionPageTemplate = ({
                           ))
                         }
                       </ul>
-                      <PreviewCompatibleImage imageInfo={construction.leftImage} />
+                      <PreviewCompatibleImage imageInfo={constructio pure={true}n.leftImage} />
                       <p>{construction.leftImage.title}</p>
                       <ul>
                         {
@@ -188,7 +187,7 @@ export const CollectionPageTemplate = ({
                     {
                       colors.items.map(item => (
                         <div>
-                          <PreviewCompatibleImage imageInfo={item.image} />
+                          <PreviewCompatibleImage imageInfo={item.image} pure={true} />
                           <p>{item.title}</p>
                         </div>
                       ))
@@ -203,7 +202,7 @@ export const CollectionPageTemplate = ({
                         hardware.top.items.map(item => (
                           <div className="column is-3">
                             <div>
-                              <PreviewCompatibleImage imageInfo={item.image} />
+                              <PreviewCompatibleImage imageInfo={item.image} pure={true} />
                               <p>{item.title}</p>
                             </div>                                      
                           </div>                                    
@@ -217,7 +216,7 @@ export const CollectionPageTemplate = ({
                             design.items.map(item => (
                               <div className="column is-3">
                                 <div>
-                                  <PreviewCompatibleImage imageInfo={item.image} />
+                                  <PreviewCompatibleImage imageInfo={item.image} pure={true} />
 
                                   <p>{item.title}</p>
                                 </div>                                      
