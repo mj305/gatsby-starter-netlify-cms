@@ -172,16 +172,6 @@ collections:
           - { label: Call Box Title, name: boxTitle, widget: string }
           - { label: Number, name: boxContent, widget: string }
           - {
-              label: Content, 
-              name: content, 
-              widget: list,
-              fields: [
-                { label: Title, name: title, widget: string },
-                { label: Bold Text, name: boldText, widget: text },
-                { label: Description, name: description, widget: text },
-              ],
-            }
-          - {
               label: Products, 
               name: products, 
               widget: object,
@@ -246,7 +236,7 @@ collections:
                 { label: Title, name: title, widget: string },
                 { label: Description, name: description, widget: text },
                 { 
-                  label: Image, 
+                  label: Images, 
                   name: images, 
                   widget: list,
                   fields: [

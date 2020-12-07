@@ -30,7 +30,11 @@ TextWithImage.propTypes = {
   content: PropTypes.shape({
     title: PropTypes.string,
     description: PropTypes.string,
-    image: PropTypes.array,
+    images: PropTypes.arrayOf(
+      PropTypes.shape({
+        image: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
+      })
+    ),
     position: PropTypes.string
   }),
 }
