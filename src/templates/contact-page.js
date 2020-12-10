@@ -63,7 +63,7 @@ export const ContactPageTemplate = ({
                 <h3 className="subtitle has-text-weight-bold">Hours</h3>
                 <p className="subtitle">Service:</p>
                 <p className="subtitle">emergency upon availability</p>
-                <p className="subtitle">Office: 8AM – 5PM  M-F</p>
+                <p className="subtitle">Office: 8AM – 6PM  M-F</p>
               </div>
             </div>
             <div className="column is-10 is-offset-1">
