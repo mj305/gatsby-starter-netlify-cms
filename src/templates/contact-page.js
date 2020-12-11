@@ -62,7 +62,6 @@ export const ContactPageTemplate = ({
               <div className="service">
                 <h3 className="subtitle has-text-weight-bold">Hours</h3>
                 <p className="subtitle">Service:</p>
-                <p className="subtitle">emergency upon availability</p>
                 <p className="subtitle">Office: 8AM – 6PM  M-F</p>
               </div>
             </div>
