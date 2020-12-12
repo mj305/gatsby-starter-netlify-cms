@@ -22,7 +22,7 @@ const Hero = ({ image, title, subTitle, boxTitle, boxContent, half, dark }) => (
               {subTitle}
             </h1>
           </div>
-          <a className="box is-background-success" href="tel:305-702-0113">
+          <a className="box is-background-success" href="tel:305-000-0000">
             <div className="content">
               <h5 className="has-text-white is-size-4">
                 {boxTitle}

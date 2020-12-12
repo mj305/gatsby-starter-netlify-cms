@@ -4,7 +4,7 @@ title: About Us
 subTitle: A Full Service Garage Doors and Gates Since 2009b
 image: /img/about-banner.png
 boxTitle: Call US
-boxContent: (305) 702-0113
+boxContent: (305) 000-0000
 images:
     left:
         -   /img/door-rollers.jpg
@@ -17,7 +17,7 @@ main:
     list:
         -   title: WE ARE A FULL SERVICE GARAGE DOORS AND GATES  SHOP
             description: >
-                AAA Garage Doors Inc.,we match the excellence of our products with exceptional services.Premium quality Local garage doors in Miami-Dade County, FL.We offer residential and commercial solutions for garage openers and overhead garage doors, such as installations, Garage Doors springs and parts replacements, maintenance and repair. From minor fixes to total garage door overhaul, our company makes it a promise to serve with absolute reliability, integrity, and commitment in presenting high-value results at reasonable rates.
+                Garage Door Serivce, we match the excellence of our products with exceptional services.Premium quality Local garage doors in Miami-Dade County, FL.We offer residential and commercial solutions for garage openers and overhead garage doors, such as installations, Garage Doors springs and parts replacements, maintenance and repair. From minor fixes to total garage door overhaul, our company makes it a promise to serve with absolute reliability, integrity, and commitment in presenting high-value results at reasonable rates.
         -   title: As licensed Garage Doors professionals, we know the value of safety and security
             description: >
                 Our company specializes in garage door services that address a variety of needs and requirements.As a trusted Local garage doors repair company, we employ highly experienced technicians and mechanics that are fully capable in fixing any garage door issues 
@@ -44,5 +44,5 @@ bottom:
     subTitle: Serving Your Local Area
     image: /img/about-bottom.png
     boxTitle: Call US
-    boxContent: (305) 702-0113
+    boxContent: (305) 000-0000
 ---

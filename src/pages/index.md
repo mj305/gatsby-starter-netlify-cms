@@ -1,11 +1,11 @@
 ---
 templateKey: index-page
-title: AAA Garage Door Inc.
+title: Garage Door Serivce.
 image: /img/home-jumbotron.jpg
-heading: Why Choose AAA Garage Door Inc?
+heading: Why Choose Garage Door Serivce?
 subheading: Same Day Service in Miami Dade, Broward, and Palm Beach Area
 subheading2: Call For Consultation
-subheading3: (305) 702-0113
+subheading3: (305) 000-0000
 mainpitch:
   title: What We Do
   description: >
@@ -19,7 +19,7 @@ description: >-
   to replacements and repairs, we apply the most innovative technologies 
   and unparalleled skill to ensure your garage doors are properly handled. 
   When your garage door springs require replacing or you need a low-cost 
-  answer for jammed garage openers, AAA Garage Door will serve with excellence 
+  answer for jammed garage openers, Garage Door Serivce will serve with excellence 
   and deliver outstanding results you can certainly rely on.We carry A huge 
   variety of approved Hurricane doors
 intro:
@@ -60,7 +60,7 @@ openers:
   subheading: THE MOST ADVANCED OPENERS AVAILABLE
   description: >
     Strong. Quiet. Versatile. Choose from the best in smart home and security features
-    to simplify your life, stay connected to home and protect what matters most,Installed and Backed Up By AAA Garage Door Inc.
+    to simplify your life, stay connected to home and protect what matters most,Installed and Backed Up By Garage Door Serivce.
   jack:
     title: Jack Shaft Openers
     description: >

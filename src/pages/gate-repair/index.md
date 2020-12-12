@@ -3,7 +3,7 @@ templateKey: gate-repair-page
 title: Gate Repair
 image: /img/banner.jpg
 content:
-    -   title: AAA Garage Door Inc.  Repair also specializes in repairing Residential Gates!
+    -   title: Garage Door Serivce Repair also specializes in repairing Residential Gates!
         description: >
             We repair all major brands and models, including LiftMaster, GTO,  etc. and carry parts in stock to get your electronic gate working again quickly! We’re the best choice for <b>residential gate repair</b> services in Miami-Dade, Fort Lauderdale, and surrounding areas.</br></br>
             <a href="/">Contact us today</a> to inspect your gate Problem, and we will make a no-charge service call and give you a free estimate for your residential gate repair work. We will inspect all parts and present you with an honest, fair, and written proposal for the repair needed and any replacement parts.</br></br>

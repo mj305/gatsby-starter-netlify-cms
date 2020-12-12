@@ -49,7 +49,7 @@ export const ContactPageTemplate = ({
                 <h3 className="subtitle has-text-weight-bold" >{heading}</h3>
                 <p className="subtitle">{subHeading}</p>
               </div>
-              <a className="box is-background-success has-text-centered" href="tel:305-702-0113">
+              <a className="box is-background-success has-text-centered" href="tel:305-000-0000">
                 <div className="content">
                   <h5 className="has-text-white">
                     {boxTitle}

@@ -111,7 +111,7 @@ export const IndexPageTemplate = ({
                   </div>
                 </div>
                 <div className="content">
-                  <p>AAA Garage Door Inc. Services and repairs all major brands of overhead commercial garage doors and motors.</p>
+                  <p>Garage Door Serivce Services and repairs all major brands of overhead commercial garage doors and motors.</p>
                   <p className="has-text-weight-bold is-uppercase">Learn more</p>
                 </div>
               </div>
@@ -139,7 +139,7 @@ export const IndexPageTemplate = ({
           </div>
         </div>
       </div>
-      <a className="box is-background-success has-text-centered" href="tel:305-702-0113">
+      <a className="box is-background-success has-text-centered" href="tel:305-000-0000">
         <div className="content">
           <h5 className="has-text-white">
             {subheading2}
@@ -156,7 +156,7 @@ export const IndexPageTemplate = ({
         <div className="columns header">
           <div className="column is-6 is-offset-3 has-text-centered">
             <h1 className="title is-size-2">
-              AAA Garage Door
+            Garage Door Serivce
             </h1>
             <h1 className="subtitle has-text-weight-bold">
               Great Reasons To Hire Us?

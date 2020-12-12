@@ -35,9 +35,7 @@ const Navbar = class extends React.Component {
     return (
       <nav className="navbar is-transparent" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
-          <Link className="navbar-item" href="/">
-            <img src={logo} alt="AAA Garage Door Inc Same Day Service Miami Dade Broward Palm Beach" width="150" height="50" />
-          </Link>
+
           <p key="but" role="button" className={`navbar-burger burger ${this.state.navBarActiveClass}`} onClick={this.toggleHamburger} onKeyDown={this.toggleHamburger} aria-label="menu" aria-expanded="false" data-target="navbarExampleTransparentExample"> {// eslint-disable-line
             }<span></span>
             <span></span>

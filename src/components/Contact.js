@@ -15,7 +15,7 @@ const Contact = () => (
           <div className="block has-text-centered">
             <i className="fa fa-phone custom-icon"></i>
             <h4 className="icon-title has-text-weight-bold">CALL US</h4>
-            <p className="icon-text">(305) 702-0113</p>
+            <p className="icon-text">(305) 000-0000</p>
           </div>
         </div>
         <div className="column is-3">

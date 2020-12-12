@@ -1,13 +1,13 @@
 ---
 templateKey: contact-page
-title: Contact AAA Garage Doors™
+title: Contact Garage Door Serivce
 subTitle: Serving Miami-Dade and Broward Counties
 image: /img/contact-banner.jpg
 buttom: Quick Quote
-heading: AAA Garage Doors Inc.
+heading: Garage Door Serivce
 subHeading: 19200 SW 106th Ave. Unit 4 Miami ,FL , 33157
 boxTitle: Call For Consultation
-boxContent: (305) 702-0113
+boxContent: (305) 000-0000
 content:
     -   title: Miami-Dade Commercial Garage Doors & Overhead Doors
         boldText: >
@@ -24,7 +24,7 @@ content:
 left:
     title: How Do You Know If You Need a Garage Door Repair?
     description: >
-        Garage Door Go up Few Inches and stop or drop down ? This could possibly mean your Garage door Springs are Broken. Garage door Rollers are bent or worn out /broken ( that might lead to bigger problems ).Garage doors Cable Fray or looking rusty  Please call right away for Garage door Repair ,Garage door opener not function isn’t an emergency but AAA Garage Door are here to help right away 
+        Garage Door Go up Few Inches and stop or drop down ? This could possibly mean your Garage door Springs are Broken. Garage door Rollers are bent or worn out /broken ( that might lead to bigger problems ).Garage doors Cable Fray or looking rusty  Please call right away for Garage door Repair ,Garage door opener not function isn’t an emergency but Garage Door Serivce are here to help right away 
 right:
     -   Cable Fray
     -   Broken Garage Door Spring
@@ -53,7 +53,7 @@ commercial:
         -   Commercial Gate Motors Repair
         -   Much more!
 doors:
-    title: AAA GARAGE DOORS
+    title: Garage Door Serivce
     text: >
-        When you schedule garage door repair services with AAA Garage Doors  you will quickly discover that we are not your average overhead door repair company. We offer flat-rate pricing on all of our services — which means that you pay by the job, not by the hour — and we never charge an overtime fee. We will also provide an accurate quote before we get started on any repairs because no one likes hidden fees.
+        When you schedule garage door repair services with Garage Door Serivce  you will quickly discover that we are not your average overhead door repair company. We offer flat-rate pricing on all of our services — which means that you pay by the job, not by the hour — and we never charge an overtime fee. We will also provide an accurate quote before we get started on any repairs because no one likes hidden fees.
 ---
